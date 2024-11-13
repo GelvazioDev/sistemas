@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+<!--MODELO SIMPLIFICADO By Mateus Tozoni -->
+
+<head>
+    <title>DANFE Simplificado</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!--DaNFE Style-->
+    <style>
+        body {
+            font-size: 10px;
+            background-color: #fff;
+            margin: 0;
+            padding: 1px;
+            font-family: Arial, Helvetica
+        }
+        
+        #container {
+            margin: 1px;
+            padding: 0
+        }
+        
+        input {
+            border: 0;
+            margin: 1px;
+            padding: 0;
+            font-size: 7pt
+        }
+        
+        h1 {
+            font-size: 18px;
+            font-weight: 700;
+            margin: 0
+        }
+        
+        h2 {
+            font-size: 13px;
+            font-weight: 700;
+            margin: 0
+        }
+        
+        h3 {
+            font-size: 8pt;
+            font-weight: 700;
+            color: #000;
+            margin: 4px 0 0
+        }
+        
+        td {
+            font-size: 7pt;
+            padding: 0;
+            margin: 0
+        }
+        
+        .grid {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 0;
+            padding: 0
+        }
+        
+        .grid td {
+            border: 1px solid #000;
+            margin: 0;
+            padding: 0;
+            margin: 0 1px
+        }
+        
+        .grid td.none {
+            border: 0;
+            padding: 0 10px
+        }
+        
+        .grid td.pad {
+            padding: 0 10px
+        }
+        
+        .grid td.pad2 {
+            padding: 0 5px
+        }
+        
+        .grid td.no-bottom {
+            border-bottom: none
+        }
+        
+        .grid th {
+            border: 1px solid #000;
+            font-size: 8pt;
+            text-align: left;
+            color: #000
+        }
+        
+        .inside td {
+            border: 1px solid #000;
+            margin: 0;
+            padding: 0;
+            margin: 0 1px;
+            height: 10px
+        }
+        
+        .itens {
+            border: 1px solid #000;
+            border-collapse: collapse;
+            width: 100%
+        }
+        
+        .itens td {
+            border-right: 1px solid #000;
+            margin: 0;
+            padding: 0;
+            font-size: 7pt
+        }
+        
+        .itens th {
+            border-right: 1px solid #000;
+            border-bottom: 1px solid #000;
+            font-size: 7pt;
+            text-align: left;
+            color: #000
+        }
+        
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 0;
+            padding: 0
+        }
+        
+        table td {
+            border: 0;
+            margin: 0;
+            padding: 0
+        }
+        
+        .caption {
+            margin: 0;
+            padding: 0 2px 1px;
+            font-size: 6pt;
+            font-weight: 400;
+            color: #000
+        }
+        
+        .right {
+            text-align: right;
+            float: right;
+            padding-right: 5px
+        }
+        
+        .right2 {
+            text-align: right;
+            float: right;
+            padding-right: 1px
+        }
+        
+        .center {
+            text-align: center;
+            float: none
+        }
+        
+        .texto {
+            font-size: 8pt
+        }
+        
+        .itens th.r {
+            text-align: right
+        }
+        
+        .bordaBox {
+            background: 0 0;
+            width: 30%
+        }
+        
+        .bordaBox .b1,
+        .bordaBox .b2,
+        .bordaBox .b3,
+        .bordaBox .b4,
+        .bordaBox .b1b,
+        .bordaBox .b2b,
+        .bordaBox .b3b,
+        .bordaBox .b4b {
+            display: block;
+            overflow: hidden;
+            font-size: 1px
+        }
+        
+        .bordaBox .b1,
+        .bordaBox .b2,
+        .bordaBox .b3,
+        .bordaBox .b1b,
+        .bordaBox .b2b,
+        .bordaBox .b3b {
+            height: 1px
+        }
+        
+        .bordaBox .b2,
+        .bordaBox .b3,
+        .bordaBox .b4 {
+            background: #cecece;
+            border-left: 1px solid #999;
+            border-right: 1px solid #999
+        }
+        
+        .bordaBox .b1 {
+            margin: 0 5px;
+            background: #999
+        }
+        
+        .bordaBox .b2 {
+            margin: 0 3px;
+            border-width: 0 2px
+        }
+        
+        .bordaBox .b3 {
+            margin: 0 2px
+        }
+        
+        .bordaBox .b4 {
+            height: 2px;
+            margin: 0 1px
+        }
+        
+        .bordaBox .conteudo {
+            padding: 5px;
+            display: block;
+            background: #cecece;
+            border-left: 1px solid #999;
+            border-right: 1px solid #999
+        }
+        
+        .pontilhado {
+            width: 100%;
+            border-bottom: #000 1px dashed;
+            margin: 10px 0
+        }
+    </style>
+
+    <style>
+        hr {
+            border: none;
+            border-bottom: 1px dashed #000;
+        }
+        
+        #watermark {
+            position: absolute;
+            opacity: 0.2;
+            color: red;
+            font-size: 900%;
+            z-index: -1;
+            transform: rotate(-45deg);
+            top: 50%;
+            left: 50%;
+            white-space: nowrap;
+            width: 100%;
+            height: 100%;
+            transform-origin: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: -50% 0 0 -50%;
+        }
+    </style>
+    <script src="barcode.js"></script>
+
+</head>
+<!-- INICIO DaNFE Simplificada -->
+
+<body>
+    <div id="container">
+        <table>
+            <tr>
+                <td colspan="2" style="text-align:center;">
+                    <hr />
+                    <strong>DANFE Simplificado - Etiqueta</strong>
+                    <hr />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <table>
+                        <tr>
+                            <td width="150"><img src={{emitente.logo}} style='max-width:120px;max-height:100px;' /></td>
+                            <td>
+                                {{emitente.nome}}<br />CNPJ:{{emitente.inscricao_nacional}} IE:{{emitente.ie}}<br />{{emitente.endereco}}, {{emitente.numero}}, {{emitente.complemento}}, {{emitente.bairro}} - {{emitente.municipio}} / {{emitente.uf}}<br
+                                /> CEP:{{emitente.cep}}
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align:center;">
+                    <hr />
+                    <div style="text-align:center;">
+                        <svg id="barcode" height="40px">
+            </svg>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="word-wrap:break-word;text-align:center;">
+                    {{chave}}
+                    <p class="caption">Protocolo de autorização de uso</p>
+                    <span>{{protocolo}} - {{data_protocolo}}</span>
+                    <br /> TIPO: {{operacao}} - Saída | Nº NFe: {{numero}} | SERIE: {{serie}}<br /> Data de emissão: {{data_emissao}}
+                    <hr />
+                </td>
+            </tr>
+            <tr>
+                <th style="text-align:left;">ITEM</th>
+                <th style="text-align:right;" width="15%">VL. ITEM</th>
+            </tr>
+            {{#each itens}}
+            <tr>
+                <td>{{this.codigo}} - {{this.descricao}} - {{this.quantidade}} UN X {{this.valor}}</td>
+                <td valign="top" style="text-align:right;">{{this.total}}</td>
+            </tr>
+            {{/each}}
+            <tr>
+                <td colspan="2">
+                    <hr />
+                </td>
+            </tr>
+            <tr>
+                <td>QTD. TOTAL DE ITENS</td>
+                <td style="text-align:right">{{itens.length}}</td>
+            </tr>
+            <tr>
+                <td><strong>VALOR NOTA R$</strong></td>
+                <td style="text-align:right"><strong>{{total_nota}}</strong></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align:center;">
+                    <hr /><strong>CONSUMIDOR</strong>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align:center;">CNPJ/CPF/ID Estrangeiro: {{destinatario.inscricao_nacional}} {{destinatario.nome}}<br /> {{destinatario.endereco}}, {{destinatario.numero}}, {{destinatario.bairro}} - {{destinatario.municipio}}/{{destinatario.uf}}
+                </td>
+            </tr>
+            <tr>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <hr />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><strong>INFORMAÇÕES ADICIONAIS DE INTERESSE DO CONTRIBUINTE</strong></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    {{{informacoes_fisco}}} <br /> {{{informacoes_complementares}}} <br /> {{{observacao}}} <br />
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+<script>
+    JsBarcode("#barcode", "{{chave}}".split(' ').join(''), {
+        format: "code128",
+        width: 1,
+        height: 40,
+        displayValue: false,
+        margin: 0
+    });
+    JsBarcode(".barcode").init();
+</script>
+
+</html>

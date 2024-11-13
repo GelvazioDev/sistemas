@@ -1,0 +1,35 @@
+html, * {
+    padding: 0;
+    margin: 0;
+}
+
+header.topo {
+background: #c71d1d;
+color: #fff;
+text-align: center;
+font-weight: 600;
+font-family: 'Titillium Web', sans-serif;
+height: 35px;
+font-size: 15px;
+padding: 6px;
+align-items: center;
+display: flex;
+justify-content: center;
+}
+
+.menu ul {
+background-color: #c71d1d;
+height: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu ul li {
+    /* background-color: tomato; */
+    color: white;
+    list-style: none;
+    font-weight: 700;
+}

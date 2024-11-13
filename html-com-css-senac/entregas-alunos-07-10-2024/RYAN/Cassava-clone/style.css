@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Poppins, sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+header{
+    background-color: #F7DFAD;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* font-weight: bold; */
+    height: 65px;
+    gap:10px;
+}
+
+.menu1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* margin-left: 30px; */
+}
+
+header nav ul li {
+    list-style: none;    
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #273B3A;
+    color: #fff;
+    font-family: "Poppins", Sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    list-style: none;
+    gap: 30px;
+}
+
+.menu2 {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.menu2 li {
+    padding: 10px;
+}
+
+.menu2 li:hover {
+    background-color: tomato;
+    cursor: pointer;
+    padding: 10px;    
+}
+
+.imagem img {
+    width: 98.79vw;
+}
+
+.historia{
+    display: flex;
+    background-color: #F7DFAD;
+}
+
+.text-historia {
+    margin-left: 100px;
+}
+
+.titulo {
+    margin-top: 40px;
+    color: tomato;
+    font-weight: bolder;
+    font-size: 20px;
+    font-family: "Poppins", Sans-serif;
+}
+
+.sub-titulo {
+    margin-top: 23px;
+    color: #fff;
+    background-color: tomato;
+    width: 44%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-weight: bolder;
+    font-size: 33px;
+    font-family: "Poppins", Sans-serif;
+}
+
+.sub-texto {
+    margin-top: 40px;
+    font-size: 23px;
+    color: #273B3A;
+    font-weight: bolder;
+    font-family: "Poppins", Sans-serif;
+}
+
+.texto {
+    margin-top: 20px;
+    color: #6D6D6D;
+    font-family: "Poppins", Sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}

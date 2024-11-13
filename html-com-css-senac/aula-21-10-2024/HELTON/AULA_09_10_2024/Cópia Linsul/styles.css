@@ -1,0 +1,106 @@
+/* Resetando o padding, margin e definindo o box-sizing para todos os elementos */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #edeff2;
+}
+
+.borda_azul{
+    display: flex;
+    height: 41px;
+    width: 100%;
+    background-color: #1133a6;
+}
+.esquerda {
+    margin-top: 10px;
+    margin-left: 174px;
+}
+.icones {
+    display: flex; /* Adicionado para usar gap */
+    gap: 12px; /* Espaçamento entre os ícones */
+    color: #fff;
+    font-size: 20px;
+}
+.direita {
+    margin-top: 10px;
+    margin-left: 914px;
+}
+.bandeiras img {
+    width: 23px; /* Largura fixa */
+}
+
+.cabecalho {
+    display: flex;
+    height: 59px;
+    width: 100%;
+    background-color: #fff;
+}
+
+.imagem_linsul{
+    display: flex;
+    margin-top: 18px;
+    margin-left: 173px;
+    width: 115px;
+    height: 27.14px;
+
+}
+.menu {
+    position: absolute;
+    display: flex;
+}
+ul {
+    display: flex;
+    margin-top: 18px;
+    margin-left: 340px;
+    gap: 44px;
+}
+.menu li {
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: column;    
+    font-size: 16px;
+    color: #1a1b1e;
+    font-weight: 600;
+}
+main {
+    margin-top: 15px;
+    display: flex;
+    width: 100%;
+    height: 435px;
+}
+img {
+    width: 100vw;
+    height: 100%;
+    object-fit: cover; /* Para manter a proporção da imagem */
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.rodape {
+    width: 100%;
+    height: 359px;
+    background-color: #62f600;
+}
+
+.barra_inferiror {
+    width: 100%;
+    height: 35px;
+    background-color: #1133a6;
+}
+
+.barra_inferiror h {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #fff;
+}

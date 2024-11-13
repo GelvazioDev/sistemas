@@ -1,0 +1,6 @@
+.fatura img:hover { 
+    transform: scale(1.1) translate(-4px, -1.5px);
+    transition: transform 0.4s ease-in-out;
+    cursor: pointer; 
+}
+

@@ -1,0 +1,19 @@
+.DS_Store
+
+.idea/
+#Outras pastas
+aplicativos-desktop/golden-layout-master/node_modules
+aplicativos-desktop/golden-layout-master/typings
+aplicativos-desktop/golden-layout-master/.idea
+aplicativos-desktop/golden-layout-master/.vscode
+aplicativos-desktop/golden-layout-master/*.tgz
+aplicativos-desktop/golden-layout-master/npm-debug.log
+aplicativos-desktop/golden-layout-master/dist
+aplicativos-desktop/golden-layout-master/doc
+aplicativos-desktop/golden-layout-master/debug.log
+aplicativos-desktop/golden-layout-master/debug.log
+aplicativos-desktop/golden-layout-master/lib
+aplicativos-desktop/golden-layout-master/apitest/dist
+aplicativos-desktop/golden-layout-master/apitest/out-tsc
+aplicativos-desktop/golden-layout-master/temp
+aplicativos-desktop/golden-layout-master/test/dist

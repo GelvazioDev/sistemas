@@ -1,0 +1,16 @@
+{
+  "token":{
+    "JWT_KEY": "YOUR_TOKEN"
+  },
+  "database": {
+    "HOST": "aws-0-sa-east-1.pooler.supabase.com",
+    "PORT": "5432",
+    "DBNAME": "postgres",
+    "USER": "postgres.vtglfccczgitidfkllmq",
+    "PASS": "pass"
+  },
+  "slack": {
+    "API_KEY_SLACK_GERAL": "API_KEY_SLACK_GERAL",
+    "API_KEY_SLACK_LOGS": "API_KEY_SLACK_LOGS"
+  }
+}

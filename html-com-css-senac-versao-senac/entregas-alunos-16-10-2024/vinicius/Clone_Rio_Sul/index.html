@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rio Sul</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./images/">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="inicio">
+                <li class="imagem">
+                    <img src="images/Screenshot_1.png" alt="">
+                </li>
+                <li class="btn selected">Inicio</li>
+                <li class="btn" id="historia">Nossa história</li>
+                <li class="btn">Produtos</li>
+                <li class="btn">Representantes</li>
+                <li class="btn">Contato</li>
+            </ul>
+            <ul class="subtitulo">
+                <li>
+                    <img src="images/Screenshot_2.png" alt="">
+                </li>
+            </ul>
+            <ul  class="rodape">
+                <li>Copyright © 2023 RioSul Tools | Criado por BRANDE</li>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+<script>
+    const menuHistoria = document.querySelector("#historia");
+    const allElements = document.querySelectorAll('.inicio .btn');
+    allElements.forEach(function (element) {
+        //console.log(element)
+        element.classList.remove("selected");
+    });
+
+
+    menuHistoria.addEventListener("click", function (e) {
+        console.log("Clicando em Historia");
+        
+        // this.style.css
+
+        this.classList.add("selected");
+
+        // muda a cor de fundo
+        // this.style = 'background-color: red;';
+
+        // console.log(this.className); // logs the className of my_element
+        // console.log(e.currentTarget === this); // logs `true`
+    });
+
+</script>
+</html>

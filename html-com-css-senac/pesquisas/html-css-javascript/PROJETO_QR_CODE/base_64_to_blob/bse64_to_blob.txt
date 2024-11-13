@@ -1,0 +1,40 @@
+The atob function will decode a base64-encoded string into a new string with a character for each byte of the binary data.
+
+const byteCharacters = atob(b64Data);
+Each character's code point (charCode) will be the value of the byte. We can create an array of byte values by applying this using the .charCodeAt method for each character in the string.
+
+const byteNumbers = new Array(byteCharacters.length);
+for (let i = 0; i < byteCharacters.length; i++) {
+    byteNumbers[i] = byteCharacters.charCodeAt(i);
+}
+You can convert this array of byte values into a real typed byte array by passing it to the Uint8Array constructor.
+
+const byteArray = new Uint8Array(byteNumbers);
+This in turn can be converted to a Blob by wrapping it in an array and passing it to the Blob constructor.
+
+const blob = new Blob([byteArray], {type: contentType});
+The code above works. However the performance can be improved a little by processing the byteCharacters in smaller slices, rather than all at once. In my rough testing 512 bytes seems to be a good slice size. This gives us the following function.
+
+const b64toBlob = (b64Data, contentType='', sliceSize=512) => {
+  const byteCharacters = atob(b64Data);
+  const byteArrays = [];
+
+  for (let offset = 0; offset < byteCharacters.length; offset += sliceSize) {
+    const slice = byteCharacters.slice(offset, offset + sliceSize);
+
+    const byteNumbers = new Array(slice.length);
+    for (let i = 0; i < slice.length; i++) {
+      byteNumbers[i] = slice.charCodeAt(i);
+    }
+
+    const byteArray = new Uint8Array(byteNumbers);
+    byteArrays.push(byteArray);
+  }
+
+  const blob = new Blob(byteArrays, {type: contentType});
+  return blob;
+}
+const blob = b64toBlob(b64Data, contentType);
+const blobUrl = URL.createObjectURL(blob);
+
+window.location = blobUrl;

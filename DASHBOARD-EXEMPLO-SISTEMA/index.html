@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamadas Api Java</title>
+
+    <link rel="stylesheet" href="core/static/styles/button.css">
+
+    <!-- MODAL -->
+    <link rel="stylesheet" href="core/static/styles/modal.css">
+    <script src="core/static/js/modal.js"></script>
+
+    <!-- fonte -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- NOVOS ESTILOS -->
+    <link rel="stylesheet" href="core/static/styles/alert.css">
+    <link rel="stylesheet" href="core/static/styles/header.css">
+    <link rel="stylesheet" href="core/static/styles/main.css">
+
+    <!-- FONT AWESOME - ICONS -ONLINE -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="core/static/styles/all.css">
+
+    <!-- Receita e Despesa -->
+    <!-- <link rel="stylesheet" href="core/static/styles/table.css">
+    <link rel="stylesheet" href="core/static/styles/despesa.css">
+    <link rel="stylesheet" href="core/static/styles/receita.css">
+    <link rel="stylesheet" href="core/static/styles/button.css"> -->
+
+    <!-- Novo header -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="core/static/styles/header_new.css">
+
+    <!-- Dashboard -->
+    <link rel="stylesheet" href="core/static/styles/dashboard.css">
+
+    <!-- Scripts -->
+    <script src="core/static/js/script.js"></script>
+
+    <!-- formulario -->
+    <link rel="stylesheet" href="core/static/styles/formulario.css">
+    <link rel="stylesheet" href="core/static/styles/checkbox.css">
+    <link rel="stylesheet" href="core/static/styles/utils.css">
+
+</head>
+
+<body>
+    <div id="menu-pagina"></div>
+    <!-- <section class="menu-lateral">
+        <nav class="menu-lateral__navegacao">
+            <a href="{% url 'home' %}"><img src="{% static '/assets/ícones/1x/Home - ativo.png' %}">Dashboard</a>
+            <a href="{% url 'despesas' %}"><img src="{% static '/assets/ícones/1x/Mais vistas - inativo.png' %}">Despesas</a>
+            <a href="{% url 'receitas' %}"><img src="{% static '/assets/ícones/1x/Mais vistas - inativo.png' %}">Receitas</a>
+        </nav>
+    </section> -->
+
+    <main>
+        <h1>main</h1>
+        <div>
+            <button class="button-add" type="button" onclick="chamadaApi()">Chamada Api</button>
+        </div>
+        <div class="btn-acao">
+            <button class="button-add" onclick="openModal()">Modal</button>
+        </div>
+
+        <h1>Retorno API</h1>
+
+        <div id="retorno-api"></div>
+
+        <div class="modal">
+            <span class="modal-backdrop close-modal" onclick="closeModal()"></span>
+            <div class="modal-content" style="display: block;">
+                <div class="modal-header">
+                    <h2 class="modal-title">Adicionar Receita</h2><button class="close-modal" onclick="closeModal()">&times</button>
+                </div>
+                <div class="modal-body">
+                    <form action="cadastroreceita" method="POST" class="formulario" id="formularioReceita">
+                        <div class="formulario-coluna">
+                            <div class="dados-formulario flex-column">
+                                <div class="wrapper">
+                                    <label for="valor">Valor:</label>
+                                    <input type="text" id="valor" placeholder="Informe o valor...">
+                                </div>
+
+                                <div class="wrapper">
+                                    <label for="data">Data:</label>
+                                    <input type="date" id="data">
+                                </div>
+                                <div class="wrapper wrap">
+                                    <label for="switchA1" class="switch-item">
+                                    <span class="label">Recebida?</span>
+                                    <input type="checkbox" name="" id="situacao" class="control" checked>
+                                </label>
+                                </div>
+                                <div class="wrapper wrap">
+                                    <label for="switchA1" class="switch-item">
+                                    <span class="label">
+                                        <i class="fa-solid fa-rotate-right"></i>Repetir?</span>
+                                    <input type="checkbox" name="" id="repetir" class="control" checked>
+                                </label>
+                                </div>
+                            </div>
+                            <div class="dados-formulario flex-column">
+
+                                <div class="wrapper">
+                                    <label for="descricao">Descrição:</label>
+                                    <input type="text" id="descricao" placeholder="Informe a descrição...">
+                                </div>
+                                <div class="wrapper">
+                                    <label for="observacao">Observação:</label>
+                                    <input type="text" id="observacao" placeholder="Informe a observação...">
+                                </div>
+                                <div class="wrapper wrap">
+                                    <label for="switchA1" class="switch-item checkbox-cadastro">
+                                    <span class="label">
+                                        <i class="fa-solid fa-thumbtack"></i>
+                                        Fixa?</span>
+                                    <input type="checkbox" name="" id="fixa" class="control" checked>
+                                </label>
+                                </div>
+                                <div class="wrapper flex-row-periodo">
+                                    <div class="wrapper-field">
+                                        <label for="vezes" class="flex-row-periodo-label">vezes</label>
+                                        <input type="number" id="vezes" class="flex-row-periodo-input">
+                                    </div>
+                                    <div class="wrapper-field">
+                                        <select name="periodo" id="periodo" class="flex-row-periodo-select">
+                                        <option value="3">Meses</option>
+                                        <option value="4">Anos</option>
+                                    </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="wrapper modal-footer flex-center gap-10">
+                            <button class="button-add" onclick="confirmar()">Confirmar</button>
+                            <button class="button-add color-red" onclick="closeModal()">Cancelar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <h1>footer</h1>
+    </footer>
+</body>
+
+<script src="js/api.js"></script>
+<script src="js/script.js"></script>
+<script>
+    function chamadaApi() {
+        //callApi(method, port, body, oCall)
+        const method = "GET";
+        const port = "cadastros";
+        const body = "";
+
+        callApi(method, port, body, function(data) {
+            // funcao de callback
+            console.log(data);
+
+            document.querySelector("#retorno-api").innerHTML = JSON.stringify(data);
+        });
+    }
+</script>
+
+</html>

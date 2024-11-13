@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 13px;
+    font-family: Open Sans, sans-serif;
+}
+
+main {
+    border:1px solid red;
+    margin: 25px 35px;
+}
+
+header {
+    color: #fff;
+    background-color: #0096db;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    /* alinha na linha(horizontal) */
+    justify-content: center;
+    /* alinhar na coluna(vertical) */
+    align-items: center;
+    height: 30px;
+    gap:10px;
+}
+
+header nav ul li {
+    list-style: none;    
+}
+
+header nav ul li:hover {
+    cursor: pointer;
+}
+
+/* .separator {
+    margin-left: 4px;;
+    border:1px solid #fff;
+} */
+
+.servico-acesso-rapido{
+    
+}
+
+.servicos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+}
+
+.servicos .box{
+    /* border: 1px solid red; */
+    /* background-color: #0096db;  */
+    width: 14vw;
+    height: 150px;
+    padding: 15px 0;
+}
+
+.box img{
+    width: 120px;
+    height: 120px;
+}
+
+.informacao{
+    /* display: flex;
+    justify-content: space-between; */
+}
+
+.ligado {
+    /* background-color: tomato; */
+    padding-left: 370px;
+}
+
+.noticias{
+    display: flex;
+    flex-direction: row;
+}
+
+.box-noticia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:10px;
+    width: 100%;
+}
+
+.box-noticia img {
+    width: 260px;
+    height: 260px;
+}
+
+.sub-titulo{
+    color:#fd7e14;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-left: 15px;
+}
+
+/* TABLET DE ATE 600PX */
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+}

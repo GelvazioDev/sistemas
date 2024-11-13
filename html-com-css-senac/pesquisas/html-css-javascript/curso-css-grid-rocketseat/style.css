@@ -1,0 +1,65 @@
+html, body {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    background: black;
+    border:0 none;
+    height: 100%;
+}
+
+body {
+    color: black;
+    font-family: sans-serif !important;
+    font-size: 12px !important;
+
+    /*
+    TIDAS
+    background-color: #3d71b8;
+    background-color: #f0f0f0;
+    */
+
+    background-color: #7159c1;
+}
+
+.container {
+    display:grid;
+    grid-template-columns: 3fr 1fr;
+    /*Da altura que eu vejo, me da um espaço */
+    grid-template-rows: 20vh 70vh 10vh;
+    /* Da um espaço entre os itens*/
+    /*grid-gap:20px 50px;*/
+    grid-template-areas: "h h"
+                         "m a"
+                         "f f";
+}
+
+header {
+    background-color: yellow;    
+    
+    /*
+    Define o header para ocupar o espaço das 3 linhas
+    grid-column:1/3;
+    grid-row: 3/4;
+    */
+    grid-area:h;
+}
+
+main {
+    background-color:blue;        
+    /*
+    grid-column: 1/2;
+    */
+    grid-area:m;
+}
+
+aside {
+    background-color:green;    
+    /*grid-column: 2/3;*/
+    grid-area:a;
+}
+
+footer {
+    background-color:red;    
+    /* grid-column: 1/3; */
+    grid-area:f;
+}

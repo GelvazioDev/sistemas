@@ -1,0 +1,32 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.principal {
+    cursor: pointer;
+}
+
+.text-divid{
+    font-size: 45px;
+    color: #ff6b19;
+    font-weight: 700;
+    font-family: "Ubuntu";
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxes { 
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    cursor: pointer;
+}
+
+.boxes div:hover { 
+    transform: scale(1.1) translate(-5px, -2px);
+    transition: transform 0.3s ease-in-out; 
+}

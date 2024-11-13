@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Associação de Moradores Alto Santana</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/loading.css">
+
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Icone -->
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff"> 
+</head>
+<script src="js/login.js" defer async></script>
+<style>
+    .link a {
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+</style>
+<body onload="validaSessao('eventos.html')">
+    <div class="box-load">
+        <div class="pre"></div>
+        <div class="mensagem-loading">Carregando página, aguarde....</div>
+    </div>
+
+    <div class="content">
+        <div class="sidebar">
+            <div class="logo-details">
+                <!-- <i class='bx bxl-c-plus-plus'></i> -->
+                <i class='bx bx-analyse'></i>
+                <span class="logo_name">
+                    <img src="images/logo.png" alt="Associação Moradores Alto Santana">
+                </span>
+            </div>
+            <ul class="nav-links" id="menu"></ul>
+        </div>
+        <section class="home-section">
+            <nav>
+                <div class="sidebar-button">
+                    <i class='bx bx-menu sidebarBtn'></i>
+                    <span class="dashboard">Eventos</span>
+                </div>
+                <div class="profile-details">
+                    <img src="images/profile.png" alt="">
+                    <span class="admin_name">Associação Moradores Alto Santana</span>
+                    <i class='bx bx-chevron-down'></i>
+                </div>
+            </nav>
+
+            <div class="home-content">
+                <div class="overview-boxes" style="display: flex; justify-content: center;align-items: center;width: 100%;">
+                    <div class="box" style="width: 100%;background-color: aqua; cursor: pointer;" onclick="redirecionaPagina('index.html')">
+                        <div class="right-side">
+                            <div class="box-topic">Pastelada 13 de Maio de 2023</div>                        
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="box" style="width: 100%;background-color: aqua;">
+                        <div class="right-side link">
+                            <div class="box-topic">Evento:CODECON</div>                        
+                            <div class="box-topic">Data:28 de outubro de 2023</div>                        
+                            <div class="box-topic">Local:Hotel Faial Prime - Florianopolis - SC</div>
+                            <div class="box-topic">Valor:R$ 1200,00</div>
+                            <div class="box-topic">Publico alvo:Devs - profissionais em cargos seniores</div>
+                            <a href="eventos/codecon2023/index.html">Palestrantes 2023</a>
+                            <br>
+                            <a href="https://www.codecon.dev/feature/quem-vai">Palestrantes</a>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="box" style="width: 100%;background-color: aqua;">
+                        <div class="right-side">
+                            <div class="box-topic">Evento:5G: Inovações e Desafios para a Aplicação da Tecnologia</div>                        
+                            <div class="box-topic">Data:20 de setembro de 2023</div>                        
+                            <div class="box-topic">Local:Hibrido</div>
+                            <div class="box-topic">Valor:R$ 0,00</div>
+                            <div class="box-topic">Ingresso comprado?Sim</div>
+                            <div class="box-topic">Publico alvo:profissionais e estudantes da área de telecomunicações, engenharia, tecnologia e negócios</div>                            
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="box" style="width: 100%;background-color: aqua;">
+                        <div class="right-side">
+                            <div class="box-topic">Póximos Eventos - Em análise....</div>                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script>
+        let sidebar = document.querySelector(".sidebar");
+        let sidebarBtn = document.querySelector(".sidebarBtn");
+        sidebarBtn.onclick = function() {
+            sidebar.classList.toggle("active");
+            if (sidebar.classList.contains("active")) {
+                sidebarBtn.classList.replace("bx-menu", "bx-menu-alt-right");
+            } else {
+                sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+            }
+        }
+    </script>
+
+</body>
+
+</html>

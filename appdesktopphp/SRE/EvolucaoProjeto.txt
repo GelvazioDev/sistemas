@@ -1,0 +1,97 @@
+Dados do Projeto
+
+	->Base de Dados->
+	->model
+		->Usuario          ->
+		->Grupo de Usuario ->ok
+		->Filial           ->
+		
+		
+		->Pessoa   ->ok   
+		->Estado   
+		->Municipio
+		->Pais     ->ok
+		->Produto  
+	->persistencia
+		->Usuario          ->
+		->Grupo de Usuario ->ok
+		->Filial           ->
+		
+		->Pessoa   ->ok   
+		->Estado   
+		->Municipio
+		->Pais     
+		->Produto 
+	->view
+		->Usuario          ->
+		->Grupo de Usuario ->ok
+		->Filial           ->
+		
+		
+		->Pessoa   ->ok   
+		->Estado   
+		->Municipio
+		->Pais     
+		->Produto 	
+	->controller
+		->Usuario          ->
+		->Grupo de Usuario ->
+		->Filial           ->
+	
+		->Pessoa   ->ok   
+		->Estado   
+		->Municipio
+		->Pais     
+		->Produto 	
+	->index
+		->Pessoa   ->ok   
+		->Estado   
+		->Municipio
+		->Pais     
+		->Produto 	
+		
+	->comportamento JavaScript
+	Funcao Altera / Exlui
+
+		->Usuario   ->		
+		
+		
+Funcoes Adicionais
+	->Programar Codigo automatico do banco de dados-falta
+	->Adicionar estilo personalizado na pagina     ->ok
+	->Alterar / Excluir em todos os cadastros      ->ok
+	->Validacao de campos nulos                    ->ok
+	->Cores dos botoes                             ->ok
+	->Excluir->vermelho claro                      ->ok
+	->Gravar->verde claro                          ->ok
+	->alterar->azul claro                          ->ok
+	->limpar->amarelo claro                        ->ok
+	
+	->Fazer tratamento de exclusoes para tabelas dependentes ->Ver na aula se é necessario
+	->corrigir classe label_formulario que nao existe        ->ok
+	->Arredondar os formularios                              ->ok
+	
+########################################################################
+Ver na aula com professor:
+	
+	1-como fazer pra n quebrar o texto na td na parte da sinopse do filme
+	->Usar a funcao substr pra pegar somente os 50 primeiros  e concatenar 3 pontos.
+	substr(var1,)
+	
+	2-Classe ViewFilmeAtor-linha->34-Como fazer para o objeto de lista 
+	de filme pegar o nome do filme pela	lista para nao ser necessario os 
+	metodos getNomeFilme e getNomeAtor
+	
+	3-Esta repetindo os dados na pagina Home para atores que atuaram no mesmo filme.
+
+
+
+
+
+
+
+
+
+
+	
+	

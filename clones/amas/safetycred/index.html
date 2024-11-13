@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Safetycred</title>
+</head>
+<style>
+    #div_cores{
+        width: 300px;
+        height: 300px;
+        display: flex;
+    }
+
+    .div_cores_1{
+        background-color: #e97804;        
+    }
+    
+    .div_cores_2{
+        background-color: #2de55b;        
+    }
+    
+    .div_cores_3{
+        background-color: #e7e902;        
+    }
+
+
+</style>
+<script>
+  function atualizaCores(numero_doc_lancamento, data_lancamento, ladnumdep, laddata){
+
+    let div_cores = document.querySelector("#div_cores");
+    div_cores.classList.remove("div_cores_1");
+    div_cores.classList.remove("div_cores_2");
+    div_cores.classList.remove("div_cores_3");
+
+    let cor_fundo = "div_cores_1";
+    if (numero_doc_lancamento == ladnumdep) {
+        cor_fundo = "div_cores_2";
+    } else if (laddata == data_lancamento) {
+        cor_fundo = "div_cores_3";
+    }
+
+    div_cores.classList.add(cor_fundo);
+  }
+
+</script>
+<body onload="atualizaCores(1,20230920, 1, 20230920)">
+  <div id="div_cores">    
+  </div>
+
+  <button onclick="atualizaCores(1,20230920, 1, 20230920)">Atualizar Lançamento "Numero doc. igual"</button>
+  <button onclick="atualizaCores(1,20230920, 2, 20230920)">Atualizar Lançamento "Numero doc. diferente" e data Igual</button>
+  <button onclick="atualizaCores(1,20230920, 2, 20220920)">Atualizar Lançamento "Numero doc. diferente" e data diferente</button>
+</body>
+</html>

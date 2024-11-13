@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F0F5FA;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+:root {
+    --ast-global-color-0: #046bd2;
+    --ast-global-color-1: #045cb4;
+    --ast-global-color-2: #1e293b;
+    --ast-global-color-3: #334155;
+    --ast-global-color-4: #F0F5FA;
+    --ast-global-color-5: #FFFFFF;
+    --ast-global-color-6: #ADB6BE;
+    --ast-global-color-7: #111111;
+    --ast-global-color-8: #111111;
+}
+
+header {
+    background-color: #F0F5FA;
+    width: 60vw;
+    height: 100px;
+    border-bottom: 1px solid tomato;
+}
+
+header nav {
+    height: 100%;
+}
+
+header nav ul {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+header nav ul li {
+    list-style: none;
+    color: var(--ast-global-color-3)
+}
+
+header nav ul li:hover {
+    color: var(--ast-global-color-1);
+    cursor: pointer;
+}
+
+header nav ul li img {
+    margin-right: 350px;
+}
+
+.menu-selected {
+    color: var(--ast-global-color-1)
+}
+
+.ferramenta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #EB7A0C;
+    gap: 225px;
+}
+
+.box-conheca {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.traco {
+    border: 2px solid #EB7A0C;
+    width: 15%;
+}
+
+.titulo-conheca-rio-do-sul {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.conheca-rio-do-sul {
+    color: #7A7A7A;
+}
+
+.button {
+    border: none;
+    border-radius: 15px;
+    background-color: #EB7A0C;
+    width: 120px;
+    padding: 10px;
+    color: #FFFFFF;
+}
+
+button:hover {
+    cursor: pointer;
+}

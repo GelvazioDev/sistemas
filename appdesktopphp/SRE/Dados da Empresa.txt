@@ -1,0 +1,9 @@
+Nome da Empresa
+DTS Systems
+
+LINK YOUTRACK
+dtssystems.myjetbrains.com
+
+Dados de Configuracao
+Usuario Administrador = gelvazio@unidavi.edu.br
+Senha Administrador=Cs2&m@F8!aYmJ6AgK1ly4z9KY

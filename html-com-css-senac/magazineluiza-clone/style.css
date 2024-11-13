@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: #000;
+    width: 100%;
+}
+
+header nav {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;    
+}
+
+header nav ul, header nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    gap:15px
+}
+
+header nav ul li, header nav ul li a {
+    color: #fff;
+    list-style: none;
+    text-decoration: none;
+}
+
+header nav ul li a:hover{
+    text-decoration: underline;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #000;
+}
+
+.menu {
+    width: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    gap:5px
+}
+
+.menu form label{
+    font-size: 25px;
+
+font-weight: bold;}
+
+.menu form input{
+    padding: 5px 7px;
+    width: 500px;
+}
+
+.bem-vindo {
+    display: flex;
+    flex-direction: column;
+}
+
+.bem-vindo span {
+    font-weight: bold;
+}
+
+.bem-vindo a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.bem-vindo a:hover{
+    text-decoration: underline;
+}
+
+.ofertas a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.ofertas a:hover{
+    text-decoration: underline;
+}
+
+.menu img {
+    width: 100px;
+    height: 50px;
+}
+
+.menu-header {
+    color: #fff;
+}
+
+.menu-header ul {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:15px
+}
+
+.menu-header ul li {
+    list-style: none;
+}
+.magalu img {
+    width:113px;
+    height: 95px;
+}
+
+.selecao-menu img {
+    width:60px;
+    height: 40px;
+}
+
+.menu-header ul li a {
+    text-decoration: none;
+}
+
+.menu-header ul li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.cartao {
+    display: flex;
+    justify-content: center;    
+}
+
+.cartao span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tem-magalu {
+    display: flex;
+    justify-content: center;
+}
+
+.tem-magalu img {
+    width: 80%;
+    height: 60%;
+}
+
+
+
+
+
+
+
+
+
+
+

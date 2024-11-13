@@ -1,0 +1,9 @@
+CREATE TABLE gcred.qrcodeimagem (
+	lojcodigo int4 NOT NULL,
+	vencodigo int4 NOT NULL,
+	qrcuuid varchar(255) NOT NULL,
+	qrcimagem bytea not NULL,
+	qrcassinado smallint not null,
+	CONSTRAINT qrcimagem_pkey PRIMARY KEY (lojcodigo, vencodigo, qrcuuid),
+	CONSTRAINT qrcimagem_lojcodigo_fkey FOREIGN KEY (lojcodigo, vencodigo) REFERENCES venda(lojcodigo, vencodigo) ON UPDATE CASCADE ON DELETE CASCADE	
+);

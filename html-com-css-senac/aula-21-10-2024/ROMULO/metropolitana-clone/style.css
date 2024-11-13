@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.topo {
+    background:#c71d1d;
+    font-family: 'Titillium Web', sans-serif;
+    color: white;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.banner-topo {
+    display: flex;
+    height: 35vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-topo img:hover{
+    cursor: pointer;
+}
+
+nav {
+    background-color: #730a0a;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 30px;
+    height: 8vh;
+    width: 85vw;
+    margin-left: 7.5vw;
+    border-radius: 10px;
+}
+
+nav ul {
+    display: flex;
+    gap: 25px;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 14px;
+    color: white;
+    font-weight: 700;
+}
+
+nav ul:hover{
+    cursor: pointer;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li:hover{
+    background: #c71d1d;
+}
+
+.casa-img {
+    position: relative ;
+    margin-top: 20px;
+    height: 75vh;
+    width: 100vw;
+}
+
+.casa-chamada {
+    position: absolute;
+    top: 95%;
+    left: 45%;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    text-shadow: 0 1px 10px rgba(0, 0, 0, .8);
+}

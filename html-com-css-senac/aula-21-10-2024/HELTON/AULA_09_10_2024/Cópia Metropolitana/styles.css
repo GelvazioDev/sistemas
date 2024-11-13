@@ -1,0 +1,296 @@
+/* Importação da fonte Titillium Web do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+/* Resetando o padding, margin e definindo o box-sizing para todos os elementos */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Definindo a cor de fundo do corpo da página */
+body {
+    background-color: #f7f7f7;
+}
+
+/* Variáveis para cores */
+:root {
+    --cor-vermelho: #c71d1d;
+    --cor-vermelhoescuro: #730a0a;
+    --cor-linhaborda: #cc5252;
+}
+
+/* Estilização do cabeçalho */
+header {
+    display: flex;
+    width: 100%;
+    height: 32px;
+    background-color: var(--cor-vermelho); /* Cor vermelha da variável */
+}
+
+/* Estilização do texto rolante (marquee) no cabeçalho */
+marquee {
+    display: flex;
+    align-items: center; /* Centraliza o texto verticalmente */
+    font-size: 15px;
+    font-weight: 600; /* Peso da fonte */
+    font-family: 'Titillium Web', sans-serif; /* Fonte importada */
+    color: #fff; /* Texto branco */
+}
+
+/* Estilização da lista de navegação (ul) */
+ul {
+    display: flex;
+    list-style: none; /* Remove os marcadores de lista */
+    gap: 32px; /* Espaçamento entre os itens */
+    margin-left: 25px;
+}
+
+/* Estilização dos itens da lista de navegação (li) */
+li {
+    display: flex;
+    align-items: center; /* Alinhamento vertical */
+    font-family: 'Titillium Web', sans-serif; /* Fonte importada */
+    font-weight: 600; /* Peso da fonte */
+    font-size: 1.12rem; /* Tamanho da fonte */
+    color: #ffffff;
+}
+
+/* Estilização da barra de navegação principal */
+.nav-bar {
+    display: flex;
+    width: 1146px;
+    height: 55px;
+    margin-left: 188px;
+    border: solid var(--cor-linhaborda); /* Borda com cor definida na variável */
+    border-radius: 10px; /* Borda arredondada */
+    background-color: var(--cor-vermelhoescuro); /* Cor vermelho escuro da variável */
+}
+
+/* Estilização do menu à esquerda na barra de navegação */
+.esquerda {
+    display: flex;
+}
+
+/* Efeito hover nos itens da esquerda */
+.esquerda li:hover {
+    background-color: var(--cor-vermelho); /* Muda cor ao passar o mouse */
+    cursor: pointer;
+    transition: all 0.3s ease-in-out; /* Transição suave */
+}
+
+/* Estilização da área de ícones de redes sociais à direita */
+.direita {
+    margin-left: 232px;
+    align-items: center; /* Centraliza verticalmente */
+    display: flex;
+    gap: 32px; /* Espaçamento entre ícones */
+}
+
+/* Estilização dos ícones */
+.direita i {
+    color: #fff;
+    font-size: 22px;
+}
+
+/* Efeito hover nos ícones de redes sociais */
+.direita i:hover {
+    background-color: var(--cor-vermelho); /* Muda cor ao passar o mouse */
+    cursor: pointer;
+    transition: all 0.3s ease-in-out; /* Transição suave */
+}
+
+/* Estilização da seção central com a logo */
+.centro {
+    display: flex;
+    width: 100%;
+    height: 224px;
+    font-weight: bold;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+/* Estilização da imagem da logo */
+.centro img {
+    display: flex;
+    width: 450px;
+    height: 124px;
+    margin-top: 50px;
+    margin-left: 530px;
+}
+
+/* Estilização da área principal do corpo do site */
+.corpo {
+    margin-top: 18px;
+    display: flex;
+    position: relative; /* Para que elementos com position: absolute fiquem dentro desse contêiner */
+    width: 100%;
+    height: 450px;
+    overflow: hidden; /* Impede que o conteúdo ultrapasse os limites */
+}
+
+/* Barra de informações sobre os imóveis */
+.barratop {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 16px;
+    width: 248px;
+    height: 301px;
+    background-color: rgba(255, 255, 255, 0.87);
+    z-index: 10; /* Garante que fique acima da imagem */
+    overflow: hidden;
+    font-family: Roboto, sans-serif;
+    flex-direction: column;
+    justify-content: center;
+}
+/* //////////////////////////////////////////////////////// */
+
+.conteudobarratop1, .conteudobarratop2, .conteudobarratop3 {
+    position: relative;
+    margin-left: 22px;
+
+}
+.conteudobarratop1 .fa {
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    float: left;
+    color: #cb1e1e;
+}
+
+.conteudobarratop1 span {
+    font-size: 14px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    color: #cb1e1e;
+}
+
+.conteudobarratop1 h2 {
+    font-size: 20px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    color: #000;
+}
+
+.conteudobarratop2 .fa {
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    float: left;
+    color: #cb1e1e;
+}
+
+.conteudobarratop2 span {
+    font-size: 14px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    color: #cb1e1e;
+}
+
+.conteudobarratop2 h2 {
+    font-size: 20px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    color: #000;
+}
+
+.conteudobarratop3 .fa {
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    float: left;
+    color: #cb1e1e;
+}
+
+.conteudobarratop3 span {
+    font-size: 14px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    color: #cb1e1e;
+}
+
+.conteudobarratop3 h2 {
+    font-size: 20px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    color: #000;
+}
+
+
+/* /////////////////////////////////////////////////// */
+
+.linha1 {
+    padding: 0px;
+    width: 96%;
+    height: 1px;
+    margin: 5px;
+    background: #cb1e1e;
+}
+
+.linha2 {
+        padding: 0px;
+        width: 96%;
+        height: 1px;
+        margin: 5px;
+        background: #cb1e1e;
+    }
+/* Estilização da área de slide de imagem */
+.imgslide {
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 0;
+    width: 100%;
+    height: 100%;
+}
+/* Ajusta a imagem para preencher o contêiner */
+.imgslide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Mantém a proporção da imagem */
+}
+/* Estilização da segunda parte do corpo, com fundo vermelho */
+.corpo2 {
+    display: flex;
+    width: 100%;
+    height: 450px;
+    background-color: #cc5252; /* Cor vermelha do mostruário */
+    overflow: hidden; /* Impede o transbordamento do conteúdo */
+}
+
+.rodape {
+    font-family: Roboto, sans-serif;
+    display: flex;
+    width: 100vw;
+    height: 350px;
+    background-color: var(--cor-vermelho); 
+}
+
+.quadro1 {
+    margin-top: 50px;
+    margin-left: 203px;
+    width: 360px;
+    height: 240px;
+    padding: 5px;
+    background-color: #000;
+}
+.quadro1 ul {
+    flex-direction: column;
+}
+
+.quadro1 ul h1 {
+    font-family: Roboto, sans-serif;
+    font-size: 28px;
+    font-weight: 300;
+    color: aqua;
+}
+
+.quadro1 ul li {
+    font-size: 8px;
+    line-height: 0; /* Ajusta a altura da linha para diminuir ou aumentar a distância entre os itens */
+}

@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.fatura-etapa-01{
+    height: 99vh;
+    padding: 15px;
+}
+
+.fatura-parte-01{
+    height: 33%;
+    background-color:  #0096db;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 25px;
+}
+
+.fatura-parte-01 div {
+    /* adicionando bordas na fatura */
+    border:1px solid tomato;
+}
+
+.fatura-parte-02{
+    height: 33%;
+    background-color:  yellow;
+}
+
+.fatura-parte-03{
+    height: 33%;
+    background-color:  tomato;
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Instascan</title>
+    <!--<script type="text/javascript" src="instascan.min.js"></script>-->
+	<script type="text/javascript" src="FileSaver.js"></script>
+	<script type="text/javascript" src="FileSaver.min.js"></script>
+  </head>
+  <body>
+    <video id="preview"></video>
+    <script type="text/javascript">
+		debugger;
+		var FileSaver = require('file-saver');
+		FileSaver.saveAs("https://httpbin.org/image", "image.jpg");
+		
+		console.log('teste');
+		window.onload(
+			//alert('teste');
+			console.log('chamando metodo teste')
+		)
+    </script>
+  </body>
+</html>

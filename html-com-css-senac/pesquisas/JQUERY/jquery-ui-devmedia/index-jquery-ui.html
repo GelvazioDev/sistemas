@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+ 	<head>
+ 		<title>jQuery UI App - Devmedia</title>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+ 		<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/themes/base/jquery-ui.css" />
+ 		<script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+ 		<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+ 		<style type="text/CSS">
+ 		  .draggable {
+ 			border: 2px solid blue;
+ 			background-color: gray;
+ 			width: 100px;
+ 			height: 60px;
+ 			margin: 20px;
+ 			display: block;
+ 		  }
+ 		</style>
+
+ 		<script type="text/Javascript">
+ 			$(document).ready(function() {
+				  $("#divDrag").draggable().resizable();
+				  $('#lista_sort').sortable();
+				  $('#acordeon').accordion();
+				  $('#data').datepicker({
+					  showOn: "button",
+					  buttonImage: "img/calendar.png",
+					  buttonImageOnly: true
+				 });
+				 $("#tabs").tabs();
+			 });
+			 //$( "#divDrag" ).show( “size”, {width: 500, height: 300}, 500, null );
+			 //$("#divDrag").animate({
+			//	backgroundColor: "yellow",
+			//	color: "black",
+			//}, 1000 );
+ 			//});
+ 		</script>
+ 	</head>
+
+ 	<body>
+		<div id="divDrag" class="draggable ui-draggable" style="position: relative;"></div>
+		
+		<ul id="lista_sort">
+			<li>Opção 1</li>
+			<li>Opção 2</li>
+			<li>Opção 3</li>
+			<li>Opção 4</li>
+			<li>Opção 5</li>
+		 </ul>
+
+		 <div id="acordeon">
+			  <h3>Seção 1</h3>
+			  <div>
+				Seção 1
+			  </div>
+			  
+			  <h3>Seção 2</h3>
+			  <div>
+				Seção 2
+			  </div>
+			  
+			  <h3>Seção 3</h3>
+			  <div>
+				Seção 3
+			  </div>
+		 </div>
+		 
+		 Data: <input type="text" id="data" /><br/><br/>
+
+		<div id="tabs">
+			 <ul>
+				<li><a href="#java">Java</a></li>
+				<li><a href="#csharp">C#</a></li>
+				<li><a href="#php">PHP</a></li>
+				<li><a href="#ruby">Ruby</a></li>
+			</ul>
+			<div id="java">
+				Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+			</div>
+			<div id="csharp">
+				Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+			</div>
+			<div id="ruby">
+				Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+			</div>
+		</div>
+
+	</body>
+ </html>

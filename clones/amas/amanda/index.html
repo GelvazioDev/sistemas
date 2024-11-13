@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amanda</title>
+</head>
+<style>
+  .acao {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+  }
+
+  .acao button {
+    padding: 10px 15px;
+  }
+
+</style>
+<body>
+    <div class="acao">
+      <button onclick="callApiAmanda('verify')">Token</button>      
+    </div> 
+    
+    <br>
+    <br>
+    <div class="acao">
+      <button onclick="callApiAmanda('participant')">Participant</button>      
+    </div> 
+
+    <div id="id_retorno"></div> 
+    
+    <br>
+    <br>
+    <label for="token_retorno">Token Retorno:</label>
+    <input type="text" disabled id="token_retorno"></div>
+    <br>
+    <label for="token_retorno">Promotion uuid:</label>
+    <input type="text" disabled id="promotion_uuid"></div>
+    <br>
+    <br>
+    <label for="token_retorno">Retorno Participant:</label>
+    <div id="id_retorno_participant"></div> 
+
+
+</body>
+
+<script src="amanda.js"></script>
+<script src="../js/api.js"></script>
+</html>

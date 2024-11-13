@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Efeitos JQuery</title>
+</head>
+<!--
+pesquisa janelas 
+efeito janela desktop com html e jquery
+
+video sobre efeitos
+https://www.youtube.com/watch?v=knaEsheCE0o
+
+site com efeitos jquery 
+https://api.jquery.com/category/effects/
+-->
+<style>
+    body {
+        background-color: #efefef;
+    }
+    
+    .box {
+        position: relative;
+        left:0;
+        width: 100px;
+        height: 100px;
+        background-color: pink;
+    }
+</style>
+<body>
+    <div class="box">
+        
+    </div>
+
+    <br>
+        <a href="#" class="showbox">SHOW</a><br><br>
+        <a href="#" class="hidebox">HIDE</a><br><br>
+        <a href="#" class="fadein">FADEIN</a><br><br>
+        <a href="#" class="fadeout">FADEOUT</a><br><br>
+    
+        <a href="#" class="slidedown">SLIDEDOWN</a><br><br>
+        <a href="#" class="slidetoggle">slidetoggle</a><br><br>
+        <a href="#" class="slideup">slideup</a><br><br>
+        <a href="#" class="toggle">toggle</a><br><br>
+        <a href="#" class="stop">stop animation</a><br><br>
+    
+        <a href="#" class="fadetoggle">fadetoggle</a><br><br>
+        <a href="#" class="finish">finish</a><br><br>
+    <hr>
+</body>
+<div>
+    <script src="../assets/js/ajax_libs_jquery_1.11.0_jquery.js"></script>
+    <script src="../assets/js/ajax_libs_jqueryui_1.10.4_jquery-ui.js"></script>
+    <script type="text/javascript">
+        var box = $('.box');        
+        box.animate({
+            width:"200px",
+            height:"200px",
+            left:"500px"
+        }, 5000, 'linear');
+        
+        var time = 1000;
+        $('.hidebox').click(function(){
+           box.hide(time);
+
+            $('.showbox').css('display', 'block');
+            $('.fadein').css('display', 'block');
+            
+            $('.hidebox').css('display', 'none');
+            $('.fadeout').css('display', 'none');
+        });        
+        
+        $('.showbox').click(function(){
+           box.show(time); 
+            $('.hidebox').css('display', 'block');
+            $('.fadeout').css('display', 'block');
+            
+            $('.showbox').css('display', 'none');
+            $('.fadein').css('display', 'none');
+        });
+
+        $('.fadein').click(function(){
+            box.fadeIn(time);
+
+            $('.fadeout').css('display', 'block');
+            $('.fadein').css('display', 'none');
+        });
+        
+        $('.fadeout').click(function(){
+            box.fadeOut(time);
+
+            $('.fadein').css('display', 'block');
+            $('.fadeout').css('display', 'none');
+        });
+                
+        $('.slidedown').click(function(){
+            box.slideDown(time);
+        });  
+        
+        $('.slidetoggle').click(function(){
+            box.slideToggle(time);
+        });
+                
+        $('.slideup').click(function(){
+            box.slideUp(time);
+        });
+                        
+        $('.toggle').click(function(){
+            box.toggle(time);
+        });
+                                
+        $('.stop').click(function(){
+            box.stop();
+        });
+                                        
+        $('.fadetoggle').click(function(){
+            box.fadeToggle(time);
+        });
+                                                
+        $('.finish').click(function(){
+            box.finish(time);
+        });
+        
+    </script>
+</div>
+</html>

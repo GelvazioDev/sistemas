@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<style>
+    body{
+        height: 100vh;
+    }
+
+    iframe{
+        width: 98vw;
+        height: 70vh;
+    }
+
+    .modal-content{
+        width:70vw;
+        margin-left: -80%;        
+    }
+
+    @media (min-width: 24px) and (max-width: 1024px) {
+        .modal-content{
+            width:70vw;
+            margin-left: -30%;        
+        }
+    }
+
+</style>
+<body>
+    
+<div class="lista-modal">
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2">
+        Launch demo modal
+    </button>
+</div>
+
+<!-- Modal -->
+<!-- <div class="modal fade modal-lg modal-teste" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"> -->
+<div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog  modal-xl" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- <iframe src="images/fatura_celesc.pdf"></iframe>-->
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam mollitia facilis error blanditiis facere voluptatibus expedita doloremque neque dolorem vitae, placeat voluptate nemo natus dolores deserunt, laudantium culpa beatae accusamus sapiente quisquam harum commodi? Quaerat mollitia numquam ut fugiat quas neque, eveniet sapiente tempora error placeat praesentium repellat eius molestias illum quasi sit quae vel, perspiciatis veniam perferendis voluptatibus delectus? Laboriosam accusamus, soluta et beatae corrupti quaerat quod numquam non exercitationem optio, facilis ea fugit, perferendis natus ipsam incidunt ratione nisi? Maiores quaerat excepturi, aliquid quos autem tempora harum. Reiciendis harum recusandae consequuntur voluptatibus tempore qui animi debitis voluptatem, ipsa quaerat facilis commodi laboriosam. Rerum aliquid dolores natus in dicta soluta praesentium fuga eum! Accusamus dolores id quaerat quae voluptatum eveniet? Quod hic repellendus magni sed fuga saepe voluptates ut. Omnis cupiditate vero distinctio debitis quae temporibus veniam iure delectus! Ullam voluptas hic consectetur corrupti vitae fugit asperiores sequi facere numquam mollitia animi quo incidunt, nobis dolores velit fuga impedit soluta explicabo! Incidunt illo esse sunt hic velit et ipsa ea. Nam natus quam commodi inventore itaque explicabo, praesentium corporis delectus doloribus iure maiores quos quaerat officia aspernatur animi? Enim quos aliquid deserunt neque, laboriosam necessitatibus tempore harum recusandae magni!</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</html>

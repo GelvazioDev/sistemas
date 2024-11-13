@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Sortable - Devmedia</title>
+		<style type="text/css">
+			body{
+				background-color: white;
+				color: black;
+				font-weight: bold;
+			}
+			#sortable { 
+				list-style-type: none; 
+				width: 300px;
+			}
+			#sortable li { 
+				margin: 6px;
+				padding: 5px; 
+				background-color: green;
+				cursor:pointer;
+			}
+			#sortable li.placeholder { 
+				height: 1.5em;
+				background-color: red;
+			}
+		</style>
+		
+		<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/themes/base/jquery-ui.css" />
+		<script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+		<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+		<script type="text/javascript">
+		$(function() {
+			$("#sortable").sortable({
+				placeholder: 'placeholder'
+			});
+			$("#sortable").disableSelection();
+		});
+		</script>
+	</head>
+	
+	<body>
+		Lista de Cursos:
+		<ul id="sortable">
+			<li>Java</li>
+			<li>C#</li>
+			<li>Ruby</li>
+			<li>PHP</li>
+			<li>Python</li>
+		</ul>
+	</body>
+</html>

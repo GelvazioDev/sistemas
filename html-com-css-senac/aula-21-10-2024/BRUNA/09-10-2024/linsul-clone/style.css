@@ -1,0 +1,134 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-fundo: #1034a6;
+
+    /* Exemplos */
+    --cor-verde: rgba(42, 93, 42, 0.467);
+    --cor-amarelo: rgba(230, 230, 67, 0.577);
+    --cor-preto: rgba(0, 0, 0, 0.515);
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: #fff;
+    font-size: 18px;
+}
+
+.menu-superior {
+    height: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.menu-inferior {
+    height: 60px;
+    background-color: #fff;
+}
+
+.menu-superior img {
+    height: 30px;
+}
+
+.menu-inferior ul {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-inferior ul li {
+    /* background-color: tomato; */
+    color: black;
+    list-style: none;
+    font-weight: 700;
+}
+
+.menu-inferior ul li:hover {
+    color: #1034a6;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.menu-inferior ul li img {
+    width: 115px;
+    height: 27px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* background-color: green; */
+}
+
+.lista-historia {
+    width: 100vw;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    /* background-color: #fff; */
+}
+
+.branco {
+    width: 1300px;
+    background-color: #fff;
+}
+
+.corpo {
+    background-color: #fff;
+    /* background-color: tomato; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+    gap: 45px;
+}
+
+.sub-titulo {
+    color: #1034a6;
+    font-size: 55px;
+    font-weight: bolder;
+}
+
+.historia {
+    height: 50px;
+    color: #696968;
+}
+
+.btn-conheca {
+    height: 50px;
+    background-color: #000;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 0 30px;
+    font-size: 18px;
+    border: none;
+}
+
+.btn-conheca:hover {
+    background-color: #00000078;
+    cursor: pointer;
+}
+
+.missao-valores {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.missao-valores img {
+    width: 80%;
+    height: 80%;
+}

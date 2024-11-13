@@ -1,0 +1,48 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br" lang="pt-br">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Drag</title>
+    
+    <meta name="author" content="Rogerio Alencar Lino Filho">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="language" content="pt-br">
+    <script type="text/javascript" src="drag.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div id="pos">x: 505<br>y: 690<br>offsetX: -163<br>offsetY: 482</div>
+<div id="janela" style="cursor: default; opacity: 1; visibility: visible; top: 208px; left: 668px;">
+    <div id="barra" onmousedown="startDrag();" onmouseup="stopDrag();">
+        <h2>Janela</h2>
+        <a id="fechar" href="http://dev.rogeriolino.com/exemplos/javascript/drag/#" title="Fechar"
+           onmouseup="fechar();">x</a>
+        <a id="esconder" href="http://dev.rogeriolino.com/exemplos/javascript/drag/#" title="Esconder"
+           onmouseup="esconder();">^</a>
+        <a id="minimax" href="http://dev.rogeriolino.com/exemplos/javascript/drag/#" title="Minimizar"
+           onmouseup="minimax();">-</a>
+    </div>
+    <div id="conteudo">
+        <p><img src="./Drag_files/xls.jpg" alt="">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus
+            venenatis fringilla purus. Suspendisse ultrices, leo vitae mollis eleifend, mi orci volutpat justo, in
+            mollis erat dolor at dolor. Etiam volutpat diam. Morbi diam. Cras leo enim, imperdiet sit amet, facilisis a,
+            ullamcorper in, nunc. Nunc elit quam, egestas sed, viverra eget, tempus nec, turpis. Morbi mauris dolor,
+            adipiscing id, facilisis eget, dapibus ac, turpis.</p>
+        <p>Quisque nec magna. Morbi tellus nisl, ullamcorper sed, ullamcorper in, adipiscing et, tellus. Maecenas at
+            urna. In vehicula est sed purus. Quisque lobortis vestibulum nulla. Sed lacinia pellentesque massa. Nulla
+            facilisi. Vestibulum semper. Nulla vitae lacus eu mauris tincidunt luctus. Ut porttitor nisi quis tortor.
+            Vestibulum adipiscing, elit id scelerisque molestie, tortor lacus ullamcorper neque, ut tristique mi purus
+            sit amet orci.</p>
+        <p>Ut venenatis lacus ut diam. Nunc dignissim mattis risus. Nam sollicitudin nunc ut mauris commodo venenatis.
+            Fusce augue tortor, consectetuer non, cursus nec, aliquam ac, magna. Praesent orci.</p>
+    </div>
+    <div id="statusbar">statusbar .:</div>
+</div>
+<a href="http://dev.rogeriolino.com/exemplos/javascript/drag/#" onmousedown="abrir();">Abrir Janela</a>
+<p>
+    <a href="http://rogeriolino.com/" title="Rog�rio Lino">http://rogeriolino.com</a>
+</p>
+
+</body>
+</html>

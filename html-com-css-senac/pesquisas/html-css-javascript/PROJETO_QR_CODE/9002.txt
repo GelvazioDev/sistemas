@@ -1,0 +1,129 @@
+[TEMPO
+contador de tempo iniciado:09-08-2019 as 13:40 
+
+[Regra de Negocios
+#Abertura Ticket 
+Lista de alterações:
+1 - Criar um projeto para ler o qr_code do carnê e armazenar a imagem do carnê na tabela que guarda os contratos,
+e deve armazenar se o carê está assinado ouy não.
+2 - Criar uma tela com os dados do carnê mais 2 colunas "Assinado" "Não assinado"
+
+http://localhost:8888/gcred/qrcode.php?code=b80e68aecc7bd888976bc847686bc340
+
+#Leonardo Borges
+tem de salvar o contrato conforme a area,ou seja, precisa ter na imagem a assinatura do cliente, deve ter algum campo para 
+identificar que a assinatura esta dentro dos parametros(ver sobre OCR)
+
+#Talis 
+Talis repassou que os botões, assinado e não assinado servem para que o lojista diga se o carnê está assinado.
+Pois a parte de ver se consta a assinatura no texto, o Talis não conseguiu fazer, deixar por ultimo esta parte.
+
+
+
+[Passos
+1 - Instalar o bowel em:Fontes>> gestao carne >> npm install -g bower
+2 - Instalar o bowel em:Fontes>> gestao carne >>src>> bower install
+3 - instalar a captura de imagens:npm install --save image-capture
+
+4 - instalar Vue
+
+npm install vue
+
+[Local github do driver
+https://github.com/schmich/instascan
+
+[Talis]
+Repasasou para ver onde que chama a funcao de listar a camera pra ver como esta sendo feito
+
+pegar e ver se a versao do github é a mesma do nossso sistema
+
+[fonte vendor.js]
+
+https://github.com/schmich/instascan
+
+https://schmich.github.io/instascan/
+
+http://localhost:4000/
+
+[Passos repassados por Talis]
+1 - gravar a imagem no pc pra ver se esta correto
+2 - recarregar a tela e a borda deve ficar vermelha apos clicar em "Carne Assinado"
+3 - link que deve ser gerado:
+link atual : http://localhost:8888/gcred/qrcode.php?code=b80e68aecc7bd888976bc847686bc340
+link gerado: http://localhost:8888/gcred/qrcode.php?code=b80e68aecc7bd888976bc847686bc340
+
+
+site para gerar os qrcode:
+https://www.the-qrcode-generator.com/
+
+[Tabela de imagem]
+--notificacao
+CREATE TABLE gcred.imagem (
+	id serial NOT NULL,
+	conteudo bytea null,
+	"createdAt" timestamptz NOT NULL DEFAULT 'now'::text::date,
+	"updatedAt" timestamptz NOT NULL DEFAULT 'now'::text::date,
+	CONSTRAINT imagem_pkey PRIMARY KEY (id)
+);
+
+CREATE TABLE gcred.imagem (
+	imgcodigo serial NOT NULL,
+	imgimagem bytea NULL,
+	CONSTRAINT imgcodigo_pkey PRIMARY KEY (imgcodigo)	
+);
+
+[qrcode]
+http://localhost:8888/gcred/qrcode.php?code=b80e68aecc7bd888976bc847686bc340
+
+#Leonardo Borges
+tem de salvar o contrato conforme a area,ou seja, precisa ter na imagem a assinatura do cliente, deve ter algum campo para 
+identificar que a assinatura esta dentro dos parametros(ver sobre OCR)
+
+#Talis 
+Talis repassou que os botões, assinado e não assinado servem para que o lojista diga se o carnê está assinado.
+Pois a parte de ver se consta a assinatura no texto, o Talis não conseguiu fazer, deixar por ultimo esta parte.
+
+
+[Regra de Negocios]
+2 - Criar a tela para listar os carnes assinados e nao assinados.
+3 - Existe uma tabela para gravar a imagem do qrcode do carne no sistema?Não
+3.1 - Criar uma nova tabela para guardar as imagens do carne no sistema.
+
+4 - Salvar a imagem(contrato) na tabela criada no passo 3.Quando tiver o S3 da Amazon, salvar estes dados neste local.
+4.1 - Para salvar a imagem, precisa que a imagem contenha todos os dados do carne, verificar na internet como fazer para alinhar o carne 
+para que contenha todo o conteudo do carne.
+
+5 - 
+
+[Nova tabela]
+CREATE TABLE gcred.qrcodeimagem (
+	lojcodigo int4 NOT NULL,
+	vencodigo int4 NOT NULL,
+	qrcuuid varchar(255) NOT NULL,
+	qrcimagem bytea not NULL,
+	qrcassinado smallint not null,
+	CONSTRAINT qrcimagem_pkey PRIMARY KEY (lojcodigo, vencodigo, qrcuuid),
+	CONSTRAINT qrcimagem_lojcodigo_fkey FOREIGN KEY (lojcodigo, vencodigo) REFERENCES venda(lojcodigo, vencodigo) ON UPDATE CASCADE ON DELETE CASCADE	
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

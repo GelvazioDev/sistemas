@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+ 	<head>
+ 		<title>Carrinho de compras - Devmedia</title>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+ 		<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/themes/base/jquery-ui.css" />
+ 		<script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+ 		<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+ 		
+		<style type="text/css">
+			body {
+				padding: 25px;
+			}
+			
+			#divCarrinho {
+				float: left;
+				padding-right: 50px;
+			}
+		
+			.produto {
+				margin: 3px;
+			}
+			
+			.produto img {
+				padding: 6px;
+			}
+		</style>
+		
+ 		<script type="text/Javascript">
+			$(document).ready(function() {
+				$(".produto").draggable({
+					'opacity': 0.3,  // faz com que o objeto fique semi-transparente quando movido
+					'revert': "valid", // traz o objeto de volta após ter sido movido
+					'delay': 200, // demora 200 ms antes de começar a arrastá-lo
+					'distance':4, // espera até que ele seja arrastado 4 pixels antes de iniciar
+					'helper': "clone" // mantém o objeto onde ele está e usar um ajudante (clone) para mostrar arrastando
+				});
+				
+				$("#carrinho").droppable({
+					'accept':".produto",  // define quais elementos irão desencadear uma 'drop'
+					'activeClass':"border",  // que classe para adicionar ao droppable enquanto arrasta
+					'drop': function(e, ui){  // Esta função é chamada quando algo é descartado
+						// atualiza o número de itens no carrinhos
+						$("#numItems").text(new Number($("#numItems").text()) + 1);
+						var id = $(ui.draggable).attr("id");
+						// obtém o preço do objeto que acabou de colocar no carrinho
+						var preco = new Number($("#" + id + " .preco").text());
+						// Atualiza o preço total no carrinho
+						$("#total").text(new Number($("#total").text()) + preco);
+					}
+				});
+			});
+ 		</script>
+ 	</head>
+
+ 	<body>
+		<p>
+			<div id="divCarrinho">
+				<img src="..\img\carrinho.jpg" id="carrinho"/><br/>
+				<b><span id="numItems">0</span></b> itens no carrinho.
+				<p>O total acumulado é de <b>R$ <span id="total">0</span></b>.
+			</div>
+
+			<div style="float:left">
+				<div class="produto" id="java">
+					<img src="..\img\java.png" align="left"/> Java
+					<p>R$<span class="preco">71.99</span>
+				</div><br/><br/>
+				<div class="produto" id="csharp">
+					<img src="..\img\csharp.png" align="left"/> C#
+					<p>R$<span class="preco">56.99</span>
+				</div><br/><br/>
+				<div class="produto" id="php">
+					<img src="..\img\php.png" align="left"/> PHP
+					<p>R$<span class="preco">31.99</span>
+				</div><br/><br/>
+				<div class="produto" id="pbuilder">
+					<img src="..\img\ruby.png" align="left"/> Ruby
+					<p>R$<span class="preco">45.99</span>
+				</div><br/><br/>
+			</div>
+		</p>
+	</body>
+ </html>

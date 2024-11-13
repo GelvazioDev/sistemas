@@ -1,0 +1,15 @@
+{
+  "name": "appexemplo",
+  "version": "1.0.0",
+  "description": "https://framework7.io/",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "framework7": "^8.3.4"
+  }
+}

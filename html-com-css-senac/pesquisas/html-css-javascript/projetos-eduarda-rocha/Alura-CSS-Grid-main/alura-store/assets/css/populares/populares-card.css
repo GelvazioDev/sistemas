@@ -1,0 +1,14 @@
+.populares__card{
+    background: #FDFDFD;
+
+    display: grid;
+
+    grid-template-areas: 
+        "card-imagem"
+        "card-corpo";
+    grid-template-columns: 100%;
+}
+
+.populares__card:last-child{
+    margin-right: 0;
+}

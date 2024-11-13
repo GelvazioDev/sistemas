@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.linha_superior {
+    padding: 29px;
+    font-weight: 500;
+}
+
+.linha_superior li {
+    padding: 44px;
+    transition: all .3s ease-in-out;
+}
+
+
+/* .menu li:hover{
+    background-color: #D87C6A;
+    cursor: pointer;
+    padding: 15px;
+} */
+
+/* MENU VERDE */
+.menu {
+    height: 110px;
+    background-color: #273b3aff;
+    color: #fff;
+    
+}
+
+.menu li {
+    padding: 15px;
+    transition: all .3s ease-in-out;
+}
+
+.menu li:hover{
+    background-color: #D87C6A;
+    cursor: pointer;
+    padding: 15px;
+}
+
+main {
+    border: 1px solid red;
+    padding: 25px 35px;
+}
+
+header {
+    color: #273b3aff;
+    background-color: #F7DFAD;
+}
+
+/* puxa o elemento */
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    /* alinha na linha horizontal */
+    justify-content: center;
+    /* alinha na coluna vertical */
+    align-items: center;
+    height: 30px;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li :hover{
+    cursor:pointer;
+
+}
+
+/* puxa classe
+.servico-acesso-rapido {
+    
+}    */
+
+.string_cassava {
+    display: flex;
+    flex-direction: row;
+}
+
+.noticias {
+    display: flex;
+    flex-direction: row;
+}
+
+.sub-titulo {
+    color: #fd7e14;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+}   

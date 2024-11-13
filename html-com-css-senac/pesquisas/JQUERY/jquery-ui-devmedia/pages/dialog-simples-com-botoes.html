@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Dialog simples com botões - Devmedia</title>
+		<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/themes/base/jquery-ui.css" />
+		<script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+		<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$("#dialog").dialog({
+					modal: true,
+					resizable: false,
+					buttons: {
+						"Ok": function() {
+							alert("Tem certeza?");
+							$(this).dialog("close");
+						},
+						"No, obg! :(": function() {
+							$(this).dialog("close");
+						}
+					}
+				});
+			});		
+		</script>
+	</head>
+	
+	<body>
+		<div id="dialog" title="Web Magazine">
+			<p>
+				Oi, seja bem vindo a revista Web Magazine da Devmedia<br>
+				Esperamos que aprecie!
+			</p>
+		</div>
+	</body>
+</html>

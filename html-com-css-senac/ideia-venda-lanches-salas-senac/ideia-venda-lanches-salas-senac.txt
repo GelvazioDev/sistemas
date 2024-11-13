@@ -1,0 +1,5 @@
+FAzer webapp para compra e venda de lanches 
+das festas ocorridas no Senac.
+
+Venda de Pastel
+Venda de espetinhos

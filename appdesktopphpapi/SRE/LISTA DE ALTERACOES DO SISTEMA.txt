@@ -1,0 +1,76 @@
+[LISTA DE ALTERACOES
+#Alterar pastas padroes do projeto
+1 - colocar todos os sistemas em pastas com letras
+sigla das letras 
+começa sempre com "S" de sistema , E MAIS 2 LETRAS com nome do modulo
+Sigla  Nome
+#Módulos de Configuração e Manutenção
+SES - Sistema Estrutura
+SUN - Sistema Ùnico
+SAU - Sistema de Autenticação
+SGR - Sistema Gerador de Relatórios
+SRE - Sistema de Regras de Negócios
+STA - Sistema de Tarefas
+
+#Modulos de Movimentação
+SNF - Sistema de Nota Fiscal - Vai conter todos os cadastros para emitir nota e as telas de emissão de notas
+SFI - Sistema Financeiro - Vai conter toda a movimentação financeira
+SER - Sistema de Emissão de Relatórios 
+
+[Dados de Configuração dos sistemas 
+1 - criar as classes padroes 
+#Consulta 
+->ViewConsultaPadrao
+	->metodos padroes 
+		->criaTela - > deve criar a tela ou lista de telas quando usar abas nas telas;
+		->adicionaComponente -> Deve adicionar a lista de telas num array
+->ConstrollerConsultaPadrao
+
+#Manutencao
+ViewManutencaoPadrao
+ControllerManutencaoPadrao
+
+#Geral 
+->PersistenciaPadrao
+->ModelPadrao
+
+2 - Colocar os nomes em portugues dos metodos e classes;
+
+3 - Eventos para criar nas telas 
+3.1 - Tela de Consultas, colocar paginacao com quantidades de 5,10,20,50 e 100 registros por pagina;
+3.2 - Programar o Debounce do desktop, na tela inicial 
+3.3 - Criar as preferencias por usuario para salvar filtros e quantidade de registro por pagina por usuario;
+
+
+[Gerenciador de Tickets Free
+https://dtssystems.myjetbrains.com/youtrack/agiles
+
+Usar a base de conhecimento para gravar as regras de negocios 
+https://dtssystems.myjetbrains.com/youtrack/articles?draft=140-0
+
+Usar as planilhas de tempos 
+https://dtssystems.myjetbrains.com/youtrack/timesheets?
+
+[Local para pesquisar Requisitos de Software
+https://github.com/Requisitos-de-Software/2020.1-GuardioesdaSaude/blob/master/docs/App.md
+
+# Lista de Projetos para desenvolver
+1 - Sistema de abertura de tickets  - 
+    http://www.brazip.com.br/sites/br/mysuite/
+    https://www.tiny.com.br/precos
+    https://www.ibm.com/docs/pt-br/dbaoc?topic=tools-business-rules-manager
+    https://www.ibm.com/docs/en/baw/20.x?topic=selectors-business-process-rules-manager
+    https://globecommerce.com.br/temas-gratuitos-para-loja-integrada-google/
+
+2 - Sistema Financeiro Pessoal
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,68 @@
+:root {
+    --var-altura:12px;
+    --primary-color: #fd951f;
+}
+
+fieldset {
+    border: black solid 1px;
+    border-radius: 3px;
+    margin: 7px 7px;
+}
+
+.formulario input {
+    margin: 5px;
+}
+
+.formulario label {
+    width: 80px;
+    /*Muda a disposição inicial do label para mudar a largura e altura */
+    display: inline-block;
+    text-align: right;
+}
+
+/* Classe de foco no campo*/
+.formulario input:focus, textarea:focus {
+    background: #ffe; /* Fundo amarelo palha */
+    border: 2px solid red; /* Borda vermelha de 2px */
+}
+
+.focoAtual {
+    background: #fdecb2;
+}
+
+.tl {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    background: url(images/corner-topleft.jpg);
+    display: none;
+}
+.tr {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    background: url(images/corner-topright.jpg);
+    display: none;
+}
+.bl {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    background: url(images/corner-bottomleft.jpg);
+    display: none;
+}
+.br {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    background: url(images/corner-bottomright.jpg);
+    display: none;
+}

@@ -1,0 +1,183 @@
+{% extends 'partials/base.html' %}
+{% load static %}
+
+<link rel="stylesheet" href="{% static '/styles/all.css' %}">
+<link rel="stylesheet" href="{% static '/styles/despesa.css' %}">
+<link rel="stylesheet" href="{% static '/styles/table.css' %}">
+
+{% block content %}
+    <div class="container">
+        <div class="titulo-pagina">Musicas</div>
+        <div class="btn-acao">
+            <button class="button-add btn-add-despesa">Baixar</button>
+        </div>
+        <div class="modal-body">
+            <form action="{% url 'baixarmusica' %}" method="POST" class="formulario" id="formularioMusica">
+                {% csrf_token %}
+                <div class="formulario-coluna">
+                    <div class="dados-formulario flex-column">
+                        <div class="wrapper">
+                            <label for="valor">Playlist:</label>
+                            <input type="text" id="url_playlist" name="url_playlist" value="https://www.youtube.com/watch?v=f02mOEt11OQ&t=2890s" placeholder="Informe o valor...">
+                        </div>
+                    </div>
+                </div>
+                <div class="wrapper modal-footer flex-center gap-10">
+                    <button class="button-add" onclick="confirmar()">Confirmar</button>
+                    <button class="button-add color-red" onclick="closeModal()">Cancelar</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="cards">
+            <div class="card">
+                <div class="descricao-valor">
+                    <div class="descricao">
+                        Despesas pendentes<span class="apontador">></span>
+                    </div>
+                    <div class="valor">
+                        R$ 1.047,46
+                    </div>
+                </div>
+                <div class="icone cor-icone-despesa">
+                    <i class="fa-solid fa-arrow-up"></i>
+                </div>
+            </div>
+            <div class="card">
+                <div class="descricao-valor">
+                    <div class="descricao">
+                        Despesas recebidas<span class="apontador">></span>
+                    </div>
+                    <div class="valor">
+                        R$ 1.047,46
+                    </div>
+                </div>
+                <div class="icone cor-icone-despesa">
+                    <i class="fa-solid fa-arrow-down"></i>
+                </div>
+            </div>
+            <div class="card ">
+                <div class="descricao-valor">
+                    <div class="descricao">
+                        Total<span class="apontador">></span>
+                    </div>
+                    <div class="valor">
+                        R$ 1.047,46
+                    </div>
+                </div>
+                <div class="icone cor-icone-despesa">
+                    <i class="fa-solid fa-scale-balanced"></i>
+                </div>
+            </div>
+        </div>
+        <div class="dados-tabela">
+            <hr>
+            <table>
+                <tr>
+                    <td>Situação</td>
+                    <td>Data</td>
+                    <td>Descrição</td>
+                    <td>Categoria</td>
+                    <td>Conta</td>
+                    <td>Valor</td>
+                    <td>Ações</td>
+                </tr>
+                <tbody>
+                    {% if musicas %}
+                        <h1>Musicas baixadas...</h1>
+                        <h1>Url da musica baixada:{{ url_playlist }}</h1>
+                        {% for musica in musicas %}
+                            <h1>Musica atual:{{ musica }}</h1>
+                        {% endfor %}
+                    {% else %}
+                        <h1>Musicas nao baixadas...</h1>
+                    {% endif %}
+
+                    <tr>
+                        <td><span class="icone cor-icone-receita-despesa checked"><i class="fa-solid fa-check"></i></span></td>
+                        <td>04/05/2023</td>
+                        <td>PAGAMENTO AGUA</td>
+                        <td>Investimento</td>
+                        <td>Carteira</td>
+                        <td>R$ 60,00</td>
+                        <td class="acoes">
+                            <button class="button-edit" title="Editar"><i class="fa-solid fa-pencil"></i></button>
+                            <button class="button-delete" title="Excluir"><i class="fa-regular fa-trash-can"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span class="icone cor-icone-receita-despesa checked"><i class="fa-solid fa-check"></i></span></td>
+                        <td>04/05/2023</td>
+                        <td>PAGAMENTO AGUA</td>
+                        <td>Investimento</td>
+                        <td>Carteira</td>
+                        <td>R$ 60,00</td>
+                        <td class="acoes">
+                            <button class="button-edit" title="Editar"><i class="fa-solid fa-pencil"></i></button>
+                            <button class="button-delete" title="Excluir"><i class="fa-regular fa-trash-can"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span class="icone cor-icone-receita-despesa aberto">
+                            <i>!</i>
+                        </span></td>
+                        <td>04/05/2023</td>
+                        <td>PAGAMENTO AGUA</td>
+                        <td>Investimento</td>
+                        <td>Carteira</td>
+                        <td>R$ 60,00</td>
+                        <td class="acoes">
+                            <button class="button-edit" title="Editar"><i class="fa-solid fa-pencil"></i></button>
+                            <button class="button-delete" title="Excluir"><i class="fa-regular fa-trash-can"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span class="icone cor-icone-receita-despesa aberto">
+                            <i>!</i>
+                        </span></td>
+                        <td>04/05/2023</td>
+                        <td>PAGAMENTO AGUA</td>
+                        <td>Investimento</td>
+                        <td>Carteira</td>
+                        <td>R$ 60,00</td>
+                        <td class="acoes">
+                            <button class="button-edit" title="Editar"><i class="fa-solid fa-pencil"></i></button>
+                            <button class="button-delete" title="Excluir"><i class="fa-regular fa-trash-can"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span class="icone cor-icone-receita-despesa aberto">
+                            <i>!</i>
+                        </span></td>
+                        <td>04/05/2023</td>
+                        <td>PAGAMENTO AGUA</td>
+                        <td>Investimento</td>
+                        <td>Carteira</td>
+                        <td>R$ 60,00</td>
+                        <td class="acoes">
+                            <button class="button-edit" title="Editar"><i class="fa-solid fa-pencil"></i></button>
+                            <button class="button-delete" title="Excluir"><i class="fa-regular fa-trash-can"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span class="icone cor-icone-receita-despesa aberto">
+                            <i>!</i>
+                        </span></td>
+                        <td>04/05/2023</td>
+                        <td>PAGAMENTO AGUA</td>
+                        <td>Investimento</td>
+                        <td>Carteira</td>
+                        <td>R$ 601,00</td>
+                        <td class="acoes">
+                            <button class="button-edit" title="Editar"><i class="fa-solid fa-pencil"></i></button>
+                            <button class="button-delete" title="Excluir"><i class="fa-regular fa-trash-can"></i></button>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+            <hr>
+        </div>
+    </div>
+{% endblock %}
+

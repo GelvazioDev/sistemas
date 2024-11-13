@@ -1,0 +1,42 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header nav ul li { 
+    list-style: none; /*tira a bolinha*/
+}
+
+.inicio {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 90px;
+    align-items: center;
+    gap: 130px;
+    background-color: #0c2783;
+    color: #ffffff;
+}
+
+.inicio li {
+    cursor: pointer;
+}
+
+.selected{
+    color:  #0274be;
+}
+
+.inicio li:hover {
+    color:  #0274be;
+}
+
+.rodape { 
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* alinha no centro orizontal*/
+    height: 50px;
+    align-items: center; /*alinha na vertical*/
+    background-color: #0c2783;
+    color: #ffffff;
+}

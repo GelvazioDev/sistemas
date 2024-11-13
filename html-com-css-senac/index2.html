@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* HEADER */
+    .box {
+        display: flex;
+        gap: 25px;
+    }
+    
+    .box2{
+        display: flex;
+        gap: 25px;
+    }
+    
+    .box3{
+        display: flex;
+        gap: 25px;
+        /* margin-left: 125px;
+        margin-right: 125px; */
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* BODY */
+    .box div {
+        background-color: aqua;
+    }
+
+    .box2 div {
+        background-color: blueviolet;
+    }
+
+    .box3 div {
+        background-color: tomato;
+        /* border: 0.7px solid red; */
+    }
+
+    #box01{
+        margin-left: 25px;
+    }
+
+    .produtos {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        padding: 10px;
+    }
+
+    .produtos div {
+        background-color: rgb(71, 240, 255);
+    }
+
+    .produtos2{
+        margin-left: 100px;        
+    }
+
+    #box09, #box10{
+        width: 100%;
+        height: 50px;
+        background-color: blueviolet;
+        color: white;
+        
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 3px;
+    }
+    
+    #box11{
+        /* display: none; */
+        visibility: hidden;        
+    }
+    
+    #box10{
+        padding-left: 9px;
+    }
+
+    #box09{
+        /* padding-left: 1px; */
+    }
+
+</style>
+<body>
+    <hr>
+    <div class="box">
+        <div id="box01">box 01</div>
+        <div id="box02">box 02</div>
+        <div id="box03">box 03</div>
+        <div id="box04">box 04</div>
+    </div>
+    <div class="box2">
+        <div id="box05">box 01</div>
+        <div id="box06">box 02</div>
+        <div id="box07">box 03</div>
+        <div id="box08">box 04</div>
+    </div>
+    <hr>
+    <h3>Produtos</h3>
+    <div class="box3">
+        
+        <div class="produtos">
+            <!-- padding de 10px -->
+            <div id="box09">box 09</div>
+            <div id="box10">box 10</div>
+            <div id="box11">box 11</div>
+            <div id="box12">box 12</div>
+        </div>
+
+    </div>
+    <h3>Margem 100px de left - Produtos 02</h3>
+    <div class="produtos2">
+        <div id="box09">box 09</div>
+        <div id="box10">box 10</div>
+        <div id="box11">box 11</div>
+        <div id="box12">box 12</div>
+    </div>
+</body>
+</html>

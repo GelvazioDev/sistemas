@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Letras</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<style>
+    
+    .montserrat-font {
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        color: orange;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+    }
+    
+    .lista-cards{
+        background-color: tomato;
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+    }
+
+    .card{
+        background-color: aqua; 
+        padding: 25px;
+    }
+
+    .card:hover { 
+        transform: scale(1.1) translate(-5px, -2px);
+        transition: transform 0.3s ease-in-out; 
+    }
+</style>
+<body>
+    <p class="montserrat-font">O que você quer acelerar?</p>
+
+    <div class="lista-cards">
+        <div class="card">card -01</div>
+        <div class="card">card -02</div>
+        <div class="card">card -03</div>
+        <div class="card">card -04</div>
+        <div class="card">card -05</div>
+    </div>
+
+</body>
+</html>

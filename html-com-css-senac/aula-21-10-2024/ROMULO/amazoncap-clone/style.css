@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: green;
+    width: 100%;
+}
+
+header img {
+    display: flex;
+    flex-direction: row;
+    margin-left: 15px;
+    margin-top: 20px;;
+}
+
+.banner{
+    position: relative;
+}
+
+.texto-baner-1 {
+    position: absolute;
+    color: white;
+    font-family: Montserrat;
+    font-size: 25px;
+    top: 20%;
+    left: 20%;
+}
+
+.texto-baner-2 {
+    position: absolute;
+    color: white;
+    font-family: Montserrat;
+    font-size: 16px;
+    top: 35%;
+    left: 20%;
+}
+
+.botao-conhecer {
+    position: absolute;
+    font-family: Montserrat;
+    top: 45%;
+    left: 20%;
+    padding: 6px 26px;
+    background-color: #FF7A19;
+    border-radius: 10px;
+    color: white;
+    text-transform: uppercase;
+    
+}
+
+.botao-conhecer:hover {
+    cursor: pointer;
+}
+
+.chamada-servico {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+    text-transform: uppercase;
+    color: #FF7A19;
+    font-size: 45px;
+    font-family: "Ubuntu";
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+}
+
+.box span {
+    text-transform: uppercase;
+    /* color: white; */
+    font-family: Montserrat;
+}
