@@ -1,0 +1,19 @@
+{
+  "name": "clerk-javascript-starter",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "build-env": "vite build --mode development",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.1.4"
+  },
+  "dependencies": {
+    "@clerk/clerk-js": "^5.26.5",
+    "framework7": "^8.3.4"
+  }
+}

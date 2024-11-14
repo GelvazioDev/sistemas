@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Color theme for statusbar (Android only) -->
+    <meta name="theme-color" content="#2196f3">
+    <!-- Your app title -->
+    <title>Template Menu</title>
+    <!-- Path to Framework7 Library Bundle CSS -->
+    <link rel="stylesheet" href="lib/framework7-bundle.min.css">
+    <!-- CSS PERSONALIZADO PARA MENU-->
+    <link rel="stylesheet" href="css/personalizado.css">
+    <!--Ícones Material Design-->
+    <link rel="stylesheet" href="css/materialdesignicons.min.css">
+
+
+</head>
+
+<body>
+    <!-- App root element -->
+    <div id="app">
+
+        <!-- Your main view, should have "view-main" class -->
+        <div class="view view-main">
+
+            <!-- Left Panel-->
+            <div class="panel panel-left panel-cover panel-resizable panel-init">
+                <div class="user-area block">
+                    <img width="80" src="img/user.jpg">
+                    <strong>Nome do Usuário</strong>
+                    <a class="link popover-open user-mail" href="#" data-popover=".popover-links">email@provedor.com</a>
+                    <div class="popover popover-links">
+                        <div class="popover-inner">
+                            <div class="list">
+                                <ul>
+                                    <li>
+                                        <a class="text-align-left list-button item-link" href="#">
+                                            <i class="mdi mdi-account"></i> Meu Perfil
+                                        </a>
+                                    </li>
+                                    <li><a class="text-align-left list-button item-link" href="#">
+                                            <i class="mdi mdi-exit-to-app"></i> Sair
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="list no-margin no-hairlines no-hairlines-between no-chevron">
+                    <ul>
+                        <li>
+                            <a href="/index/" class="item-panel active link item-link item-content panel-close">
+                                <!-- ICONE -->
+                                <div class="item-media">
+                                    <i class="mdi mdi-home"></i>
+                                </div>
+                                <!-- TEXTO E BADGE-->
+                                <div class="item-inner">
+                                    <div class="item-title">Inicial</div>
+                                    <div class="item-after"></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/outra/" class="link item-panel item-link item-content panel-close">
+                                <!-- ICONE -->
+                                <div class="item-media">
+                                    <i class="mdi mdi-link-variant"></i>
+                                </div>
+                                <!-- TEXTO E BADGE-->
+                                <div class="item-inner">
+                                    <div class="item-title">Outra</div>
+                                    <div class="item-after"></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/notificacoes/" class="link item-panel item-link item-content panel-close">
+                                <!-- ICONE -->
+                                <div class="item-media">
+                                    <i class="mdi mdi-bell"></i>
+                                </div>
+                                <!-- TEXTO E BADGE-->
+                                <div class="item-inner">
+                                    <div class="item-title">Notificações</div>
+                                    <div class=" text-color-white badge color-blue">1</div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Initial Page, "data-name" contains page name -->
+            <div data-name="index" class="page color-theme-blue">
+
+                <!-- Top Navbar -->
+                <div class="navbar">
+                    <div class="navbar-bg"></div>
+                    <div class="navbar-inner">
+                        <div class="left">
+                            <a href="#" data-panel=".panel-left" class="link panel-open">
+                                <i class="mdi mdi-menu"></i>
+                            </a>
+                        </div>
+                        <div class="title">Template Menu</div>
+                        <div class="right">
+                            <a href="#" class="link">Link</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Scrollable page content -->
+                <div class="page-content">
+                    <div class="block">
+                        Seu conteúdo aqui
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Path to Framework7 Library Bundle JS-->
+    <script type="text/javascript" src="lib/framework7-bundle.min.js"></script>
+	<!-- jQuery -->
+	<script type="text/javascript" src="lib/jquery-3.7.0.min.js"></script>	
+    <!-- Roteamento do app-->
+    <script type="text/javascript" src="js/routes.js"></script>
+    <script src="cordova.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>FOCUS TIME!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" media="screen" href="css/button.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="css/clock.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="css/foco.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="css/table.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="css/notification.css" />
+
+  <link rel="stylesheet" type="text/css" media="screen" href="css/global.css" />
+
+  <script src="js/watcher.js" defer></script>
+</head>
+
+<body onload="loadTasks()">
+<!-- <body> -->
+  <div class="relogio notification">
+    <h1 class="title">FOCUS TIME</h1>
+    <hr class="separator">
+    <div class="clock">
+      <div class="hand hr"></div>
+      <div class="hand min"></div>
+      <div class="hand sec"></div>
+
+      <span class="number twelve"></span>
+      <span class="number three"></span>
+      <span class="number six"></span>
+      <span class="number nine"></span>
+    </div>
+
+    <div class="digital">
+      <span class="d-hr" id="hora"></span> : <span class="d-min" id="minuto"></span> :<span class="d-sec"
+        id="segundo"></span>
+      <hr class="separator">
+    </div>
+
+    <div class="foco">
+      <div class="task-list">
+        <h1>Task</h1>
+        <div class="task">
+          <label for="task-id">id:</label>
+          <input type="text" id="id" size="5" value="91" disabled>
+          <div class="status">
+              <label for="">Status:</label>
+              <button class="btn btn-3" id="btnStatusPlay">PLAYNG</button>
+          </div>
+        </div>
+      </div>
+      <br>
+      <hr>
+      <br>
+      <div class="play-pause">
+        <button class="btn btn-3" onclick="playFocus()">PLAY</button>
+        <button class="btn btn-1" onclick="pauseFocus()">PAUSE</button>        
+        <button class="btn btn-2" onclick="loadTasks()">LOAD</button>        
+      </div>
+    </div>
+  </div>
+
+  <div class="data-table">
+    <table>
+      <thead>
+        <th>id</th>
+        <th>Description</th>
+        <th>Status</th>
+        <th colspan="3">Actions</th>
+      </thead>
+      <tbody class="task-tbody"></tbody>
+    </table>
+  </div>
+
+</body>
+
+<script src="js/api.js"></script>
+<script src="js/slack.js"></script>
+<script src="js/focusapi.js"></script>
+<script src="js/focus.js"></script>
+<script src="js/task.js"></script>
+
+</html>

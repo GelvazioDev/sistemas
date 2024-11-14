@@ -1,0 +1,59 @@
+.foco {
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 45px;
+  border: 1px solid #fff;
+  gap: 3px;
+}
+
+.play-pause {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.foco .play-pause button {
+  width: 60px;
+  height: 60px;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.relogio .title {
+  text-align: center;
+}
+
+/* TASK DATA */
+
+.task {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border-radius: 10px;
+}
+
+.task-list h1 {
+  text-align: center;
+}
+
+.task-list div label {
+  width: 70px;
+  /* background-color: red; */
+}
+
+.task-list div input {
+  padding: 10px 20px;
+}
+
+.separator {
+  width: 300px;
+  padding: 0;
+}

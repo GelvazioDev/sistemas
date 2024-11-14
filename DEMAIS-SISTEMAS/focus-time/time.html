@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // Objeto inicial
+let times = {
+    status: "pause", // começa em "pause"
+    start: {
+        day: "00",
+        month: "00",
+        year: "00",
+        hour: "00",
+        minute: "00",
+        second: "00",
+    },
+    end: {
+        day: "00",
+        month: "00",
+        year: "00",
+        hour: "00",
+        minute: "00",
+        second: "00",
+    },
+    time_counted: {
+        day: "00",
+        month: "00",
+        year: "00",
+        hour: "00",
+        minute: "00",
+        second: "00",
+    }
+};
+
+// Variáveis auxiliares
+let interval;
+let startTime;
+
+// Função para atualizar o tempo contado
+function updateTimeCounted() {
+    const now = new Date();
+    const elapsedTime = now - startTime;
+
+    // Converte milissegundos em horas, minutos e segundos
+    const hours = Math.floor((elapsedTime / (1000 * 60 * 60)) % 24);
+    const minutes = Math.floor((elapsedTime / (1000 * 60)) % 60);
+    const seconds = Math.floor((elapsedTime / 1000) % 60);
+
+    // Atualiza o objeto times.time_counted
+    times.time_counted.hour = String(hours).padStart(2, '0');
+    times.time_counted.minute = String(minutes).padStart(2, '0');
+    times.time_counted.second = String(seconds).padStart(2, '0');
+
+    console.log("Tempo contado:", times.time_counted);
+}
+
+// Função para lidar com o clique do botão
+function toggleTimer() {
+    if (times.status === "pause") {
+        // Altera o status para "play" e inicia o contador
+        times.status = "play";
+        startTime = new Date(); // Define o momento inicial
+        interval = setInterval(updateTimeCounted, 1000); // Atualiza a cada segundo
+        console.log("Contador iniciado");
+    } else {
+        // Altera o status para "pause" e para o contador
+        times.status = "pause";
+        clearInterval(interval);
+        updateTimeCounted(); // Atualiza uma última vez o tempo contado
+        console.log("Contador pausado");
+    }
+}
+
+// Exemplo de um botão HTML para chamar a função
+
+</script>
+    <button onclick="toggleTimer()">Iniciar/Pausar</button>
+</body>
+</html>

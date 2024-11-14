@@ -1,0 +1,21 @@
+name: Deploy php 7.4
+
+on:
+  push:
+    paths:
+      - 'php-7.4/**'
+    branches:
+      - "master"
+
+concurrency:
+  group: php-${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    name: Deploy
+    uses: ./.github/workflows/vercel.yml
+    secrets: inherit
+    with:
+      projectId: "prj_O8ddYFcAyG1ihzTZCFxA8xXPrtEe"
+      projectPath: "php-7.4"

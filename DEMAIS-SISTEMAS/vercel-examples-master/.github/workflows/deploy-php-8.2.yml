@@ -1,0 +1,21 @@
+name: Deploy php 8.2
+
+on:
+  push:
+    paths:
+      - 'php-8.2/**'
+    branches:
+      - "master"
+
+concurrency:
+  group: php-${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    name: Deploy
+    uses: ./.github/workflows/vercel.yml
+    secrets: inherit
+    with:
+      projectId: "prj_wXRdr49SVDdikjwyTZ7V05tx76wm"
+      projectPath: "php-8.2"

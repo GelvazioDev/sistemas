@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Color theme for statusbar (Android only) -->
+    <meta name="theme-color" content="#2196f3">
+    <!-- Your app title -->
+    <title>Template Grid</title>
+    <!-- Path to Framework7 Library Bundle CSS -->
+    <link rel="stylesheet" href="lib/framework7-bundle.min.css">
+    <!-- CSS PERSONALIZADO PARA MENU-->
+    <link rel="stylesheet" href="css/personalizado.css">
+    <!--Ícones Material Design-->
+    <link rel="stylesheet" href="css/materialdesignicons.min.css">
+
+
+</head>
+
+<body>
+    <!-- App root element -->
+    <div id="app">
+
+        <!-- Your main view, should have "view-main" class -->
+        <div class="view view-main">
+
+            <!-- Initial Page, "data-name" contains page name -->
+            <div data-name="index" class="page color-theme-blue">
+
+                <!-- Top Navbar -->
+                <div class="navbar">
+                    <div class="navbar-bg"></div>
+                    <div class="navbar-inner justify-content-center">
+                        <div class="title ">Grid Template</div>
+                    </div>
+                </div>
+
+                <!-- Scrollable page content -->
+                <div class="page-content">
+                    <div class="block">
+                        <div class="row">
+                            <!-- Each "cell" has col-[width in percents] class -->
+                            <div class="col-33 medium-25">
+                                <a href="/link1/" class="display-block text-align-center link">
+                                    <div class="item-grid item-blue">
+                                        <i class="mdi mdi-link-variant"></i>
+                                    </div>
+                                    <div class="text-grid text-grid-blue">
+                                        <span> Link 1 </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-33 medium-25">
+                                <a href="/link2/" class="display-block text-align-center link">
+                                    <div class="item-grid item-green">
+                                        <i class="mdi mdi-link-variant"></i>
+                                    </div>
+                                    <div class="text-grid text-grid-green">
+                                        <span> Link 2 </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-33 medium-25">
+                                <a href="/link3/" class="display-block text-align-center link">
+                                    <div class="item-grid item-pink">
+                                        <i class="mdi mdi-link-variant"></i>
+                                    </div>
+                                    <div class="text-grid text-grid-pink">
+                                        <span> Link 3 </span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row margin-top">
+                            <!-- Each "cell" has col-[width in percents] class -->
+                            <div class="col-33 medium-25">
+                                <a href="/link4/" class="display-block text-align-center link">
+                                    <div class="item-grid item-red">
+                                        <i class="mdi mdi-link-variant"></i>
+                                    </div>
+                                    <div class="text-grid text-grid-red">
+                                        <span> Link 4 </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-33 medium-25">
+                                <a href="/link5/" class="display-block text-align-center link">
+                                    <div class="item-grid item-purple">
+                                        <i class="mdi mdi-link-variant"></i>
+                                    </div>
+                                    <div class="text-grid text-grid-purple">
+                                        <span> Link 5 </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-33 medium-25">
+                                <a href="/link6/" class="display-block text-align-center link">
+                                    <div class="item-grid item-orange">
+                                        <i class="mdi mdi-link-variant"></i>
+                                    </div>
+                                    <div class="text-grid text-grid-orange">
+                                        <span> Link 6 </span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Path to Framework7 Library Bundle JS-->
+    <script type="text/javascript" src="lib/framework7-bundle.min.js"></script>
+	<!-- jQuery -->
+	<script type="text/javascript" src="lib/jquery-3.7.0.min.js"></script>	
+    <!-- Roteamento do app-->
+    <script type="text/javascript" src="js/routes.js"></script>
+    <script src="cordova.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+.data-table {
+  width: 100%;
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: auto;
+  min-height: 1000px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+}
+
+.data-table table {
+  border-radius: 10px;
+}
+
+thead th {
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  padding: 30px;
+}
+
+thead th:last-child {
+  border-right: none;
+}
+
+.data-table tbody tr td {
+  padding: 10px 15px;
+  text-align: center;
+}
+
+.last-row {
+  border-bottom: 1px solid rgb(19, 19, 82);
+}
+
+.btn-table {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.btn-table .btn {
+  width: 60px;
+  text-align: center;
+  padding: 9px 13px;
+}
+
+.hr-table td{
+  border-bottom: 1px solid #fff;
+}

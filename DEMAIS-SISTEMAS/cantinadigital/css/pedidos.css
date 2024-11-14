@@ -1,0 +1,34 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.modal{
+    /* background-color: tomato; */
+    width: 70%;
+    top:20%;
+    left:20%;
+    height: 70%;
+    border: none;
+    border-radius: 15px;
+}
+
+.consulta{
+    height: 80%;
+}
+
+.modal-content{
+    height: 100%;
+}
+
+.total-pedido-texto{
+    font-size: 18px;
+}
+
+.total-pedido-valor{
+    font-size: 18px;
+    color: green;
+}
+
+.number{
+    font-size: 10px;
+}

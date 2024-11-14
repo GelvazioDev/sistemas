@@ -1,0 +1,21 @@
+{
+  "name": "framework7test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "start": "web-dev-server --node-resolve --open --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "framework7": "^8.3.4"
+  },
+  "devDependencies": {
+    "@web/dev-server": "^0.4.6"
+  }
+}

@@ -1,0 +1,72 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(19, 19, 82);
+  color: #fff;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+  margin-left: 50px;
+  gap: 20px;
+}
+
+@media screen and (max-height: 720px) {
+  body {
+    color: #fff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 20px;
+    gap: 20px;
+  }
+  /*---------------------WHATCHER------------------ */
+  .notification {
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #fff;
+    align-items: center;
+    height: 670px;
+  }
+  .title {
+    font-size: 24px;
+    margin-top: 20px;
+  }
+  .clock {
+    width: 190px;
+    height: 190px;
+  }
+  .digital {
+    margin-top: 0;
+    height: 30px;
+  }
+  .foco {
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 15px;
+    border: 1px solid #fff;
+    gap: 3px;
+  }
+  /*----------------------DATA TABLE--------------------------- */
+  .data-table {
+    min-height: 670px;
+    max-height: 670px;
+    overflow: auto;
+  }
+  thead th {
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    padding: 25px;
+  }
+}

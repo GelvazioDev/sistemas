@@ -1,0 +1,7 @@
+[banco de dados redis free
+com api e 50gb mensal de banda 
+
+https://upstash.com/docs/devops/developer-api/redis/get_database
+
+
+

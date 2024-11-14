@@ -1,0 +1,33 @@
+function slackTesteGelvazio($assunto, $message, $room = "geral") {
+    try {
+        $assunto = str_ireplace("<br>", "\n", $assunto);
+        $assunto = str_ireplace("<br/>", "\n", $assunto);
+
+        $message = str_ireplace("<br>", "\n", $message);
+        $message = str_ireplace("<br/>", "\n", $message);
+
+        $data = "payload=" . json_encode(array(
+                "channel" => "#{$room}",
+                "text" => "[$assunto] \n$message"
+            ));
+
+
+        // link para criar os webhook
+        // https://my.slack.com/services/new/incoming-webhook
+
+        // You can get your webhook endpoint from your Slack settings
+        $url_app_gelvazio = "https://hooks.slack.com/services/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";
+
+        $ch = curl_init($url_app_gelvazio);
+        curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+
+        $result = curl_exec($ch);
+        curl_close($ch);
+
+        return $result;
+    } catch (Exception $ex) {
+
+    }
+}

@@ -1,0 +1,62 @@
+{
+  "app": [
+    {
+      "id": "1",
+      "nome": "GMAIL",
+      "tipo": "BACKEND/FRONTEND/SERVICO",
+      "status": "ATIVO/INATIVO",
+      "url": "ATIVO/INATIVO",
+      "image": "ATIVO/INATIVO",
+      "email": [
+        {
+          "id": "1",
+          "email": "gelvazio@gmail.com",
+          "senha": "padrao-gelvazio",
+          "telefone": "47988630404",
+          "status": "ATIVO"
+        },
+        {
+          "id": "1",
+          "email": "devgelvazio@gmail.com",
+          "senha": "devgelvazio@gmail.com",
+          "telefone": "47988630404",
+          "status": "ATIVO"
+        },
+        {
+          "id": "2",
+          "email": "gelvaziocamargo@gmail.com",
+          "senha": "devgelvazio@gmail.com",
+          "telefone": "47988630404",
+          "status": "ATIVO"
+        },
+        {
+          "id": "1",
+          "email": "gelvaziosenac2022@gmail.com",
+          "senha": "Senac.2022",
+          "telefone": "47988630404",
+          "status": "ATIVO"
+        },
+        {
+          "id": "1",
+          "email": "gelvaziosenac@gmail.com",
+          "senha": "Senac.2024",
+          "telefone": "47988630404",
+          "status": "ATIVO"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "nome": "Senac - CRIAR E-MAIL ABAIXO",
+      "email": "senac@gmail.com",
+      "senha": "123456"
+    },
+    {
+      "id": "2",
+      "nome": "PYTHON-ANYWHERE",
+      "url": "https://www.pythonanywhere.com/registration/register/beginner/",
+      "email": "gelvaziosenac@gmail.com",
+      "senha": "66&5c*X9GBt+/?S"
+    }
+  ]
+}

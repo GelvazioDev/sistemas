@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/clerk.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SAI</title>
+
+    <link rel="stylesheet" href="node_modules/framework7/framework7-bundle.min.css">
+  </head>
+  <body>
+    <div id="app">
+
+      <!-- Your main view, should have "view-main" class -->
+      <div class="view view-main">
+
+          <!-- Initial Page, "data-name" contains page name -->
+          <div data-name="index" class="page">
+              <div class="page">
+                  <div class="navbar">
+                      <div class="navbar-bg"></div>
+                      <div class="navbar-inner justify-content-center">
+                          <div class="title">Sistema de Atendimento Institucional</div>
+                      </div>
+                  </div>
+
+                  <div class="page-content" style="display: flex; justify-content: center;align-items: center;">
+
+                      <!-- LOGIN -->
+                      <div class="block" style="width: 100%;">
+                          <div class="login-screen-page">
+                              <div class="page-content login-screen-content">
+                                  <div class="login-screen-title">SAI</div>
+                                  <form>
+                                      <div class="list">
+                                          <ul>
+                                              <li class="item-content item-input">
+                                                  <div class="item-inner">
+                                                      <div class="item-title item-label">Usuário</div>
+                                                      <div class="item-input-wrap">
+                                                          <input type="text" name="username" id="demo-username-1"
+                                                              placeholder="Digite seu e-mail" value="admin" />
+                                                          <span class="input-clear-button"></span>
+                                                      </div>
+                                                  </div>
+                                              </li>
+
+                                              <li class="item-content item-input">
+                                                  <div class="item-inner">
+                                                      <div class="item-title item-label">Senha</div>
+                                                      <div class="item-input-wrap">
+                                                          <input type="password" name="password" id="demo-password-1"
+                                                              placeholder="Digite sua senha" value="123" />
+                                                          <span class="input-clear-button"></span>
+                                                      </div>
+                                                  </div>
+                                              </li>
+
+                                              <li class="item-content" style="display: flex;flex-direction:column;width: 100%;
+                                                  padding-right: 15px;
+                                                  padding-bottom: 10px;">
+
+                                                  <a id="btnEntrar" style="display: flex;flex-direction:column;width: 100%;"
+                                                      class="button button-raised button-large button-fill login-screen-open">Entrar
+                                                  </a>
+
+                                                  <a style="margin-top: 15px; display: flex;flex-direction:column;width: 100%;"
+                                                      class="button button-raised button-large button-fill login-screen-open"
+                                                      data-login-screen=".login-screen">Cadastrar
+                                                  </a>
+                                              </li>
+                                          </ul>
+                                      </div>
+                                  </form>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="login-screen">
+                      <div class="page login-screen-page">
+                          <div class="page-content login-screen-content">
+                              <div class="login-screen-title">SAI</div>
+                              <form>
+                                  <div class="list">
+                                      <ul>
+                                          <li class="item-content item-input">
+                                              <div class="item-inner">
+                                                  <div class="item-title item-label">Usuário</div>
+                                                  <div class="item-input-wrap">
+                                                      <input type="text" name="username" id="demo-cad-username-1"
+                                                          placeholder="Digite seu e-mail" />
+                                                      <span class="input-clear-button"></span>
+                                                  </div>
+                                              </div>
+                                          </li>
+                                          <li class="item-content item-input">
+                                              <div class="item-inner">
+                                                  <div class="item-title item-label">Senha</div>
+                                                  <div class="item-input-wrap">
+                                                      <input type="password" name="password" id="demo-cad-password-1"
+                                                          placeholder="Digite sua senha" />
+                                                      <span class="input-clear-button"></span>
+                                                  </div>
+                                              </div>
+                                          </li>
+                                          <li class="item-content" style="display: flex;flex-direction:column;width: 100%;
+                                                  padding-right: 15px;
+                                                  padding-bottom: 10px;">
+
+                                              <a style="display: flex;flex-direction:column;width: 100%;"
+                                                  class="button button-raised button-large button-fill login-screen-open"
+                                                  id="btnCadastrarUsuario">Confirmar
+                                              </a>
+
+                                              <a style="margin-top: 15px; display: flex;flex-direction:column;width: 100%;"
+                                                  class="button button-raised button-large button-fill login-screen-open"
+                                                  id="btnVoltarLogin">Voltar
+                                              </a>
+                                          </li>
+                                      </ul>
+                                  </div>
+                                  <div class="list inset">
+                                      <div class="block-footer">Sistema de Atendimento Institucional
+                                      </div>
+                                  </div>
+                              </form>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <!-- TAB BAR - BOTTOM-->
+          <div class="toolbar toolbar-bottom" style="display: none;">
+              <div class="toolbar-inner display-flex">
+                  <a href="/index/" class="tab-link link active">
+                      <i class="mdi mdi-home"></i>
+                      <span>Link 1</span>
+                  </a>
+                  <a href="/link2/" class="tab-link link">
+                      <i class="mdi mdi-link"></i>
+                      <span>Link 2</span>
+                  </a>
+                  <a href="/link3/" class="tab-link link">
+                      <i class="mdi mdi-account"></i>
+                      <span>Link 3</span>
+                  </a>
+              </div>
+          </div>
+      </div>
+  </div>
+
+    <script type="text/javascript" src="node_modules/framework7/framework7-bundle.min.js"></script>
+    
+    <script type="module" src="js/main.js" async crossorigin="anonymous"></script>
+
+    <!-- <script type="text/javascript" src="node_modules/framework7/framework7-bundle.min.js"></script> -->
+    <!-- <script type="text/javascript" src="lib/framework7-bundle.min.js"></script> -->
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="js/jquery-3.7.0.min.js"></script>
+
+  </body>
+</html>

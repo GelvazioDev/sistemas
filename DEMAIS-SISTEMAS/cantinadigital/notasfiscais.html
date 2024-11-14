@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cantina Digital</title>
+
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Icone -->
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- NOVO BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/loading.css">
+</head>
+
+<!-- <script src="js/login.js" defer async></script> -->
+
+
+<body onload="validaSessao('notasfiscais.html')">
+    <div class="box-load">
+        <div class="pre"></div>
+        <div class="mensagem-loading">Carregando página, aguarde....</div>
+    </div>
+
+    <div class="content">
+        <div class="sidebar"></div>
+
+        <section class="home-section">
+            <nav id="nav-pagina"></nav>
+
+            <div class="home-content">
+                <div class="overview-boxes"
+                    style="display: flex; justify-content: center;align-items: center;width: 100%;">
+                    <div class="box" style="width: 100%;background-color: aqua;">
+                        <div class="right-side">
+                            <div class="box-topic">Em desenvolvimento....</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="js/login.js"></script>
+
+    <script>
+        let sidebar = document.querySelector(".sidebar");
+        let sidebarBtn = document.querySelector(".sidebarBtn");
+        sidebarBtn.onclick = function () {
+            sidebar.classList.toggle("active");
+            if (sidebar.classList.contains("active")) {
+                sidebarBtn.classList.replace("bx-menu","bx-menu-alt-right");
+            } else {
+                sidebarBtn.classList.replace("bx-menu-alt-right","bx-menu");
+            }
+        }
+    </script>
+
+</body>
+
+</html>

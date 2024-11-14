@@ -1,0 +1,39 @@
+.notification {
+  color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #fff;
+  align-items: center;
+}
+
+.notification-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.notification-text h1 {
+  text-align: center;
+}
+
+.notification-text .group-text {
+  display: flex;
+  gap: 5px;
+  text-align: right;
+}
+
+.notification-text .group-text label {
+  font-size: 20px;
+  width: 100px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.notification-text .group-text input {
+  padding: 15px 22px;
+}

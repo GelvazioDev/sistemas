@@ -1,0 +1,286 @@
+{
+  "focus": [
+    {
+      "id": "1",
+      "description": "WORKING",
+      "observation": "Fazendo Tickets...",
+      "status": "play",
+      "inicio": {
+        "day": "00",
+        "month": "00",
+        "year": "00",
+        "hour": 20,
+        "minute": 32,
+        "second": 25
+      },
+      "fim": {
+        "day": "00",
+        "month": "00",
+        "year": "00",
+        "hour": "00",
+        "minute": "21",
+        "second": "5"
+      },
+      "tempo_decorrido": {
+        "day": "00",
+        "month": "00",
+        "year": "00",
+        "hour": "00",
+        "minute": "21",
+        "second": "5"
+      }
+    },
+    {
+      "id": "2",
+      "description": "RESTING",
+      "status": "play",
+      "inicio": {
+        "day": "00",
+        "month": "00",
+        "year": "00",
+        "hour": 20,
+        "minute": 32,
+        "second": 52
+      },
+      "fim": {
+        "day": "00",
+        "month": "00",
+        "year": "00",
+        "hour": "00",
+        "minute": "21",
+        "second": "5"
+      },
+      "tempo_atual_inicio": {
+        "day": "00",
+        "month": "00",
+        "year": "00",
+        "hour": "00",
+        "minute": "21",
+        "second": "5"
+      },
+      "tempo_atual_fim": {
+        "day": "00",
+        "month": "00",
+        "year": "00",
+        "hour": "00",
+        "minute": "21",
+        "second": "5"
+      },
+      "tempo_decorrido": {
+        "day": "00",
+        "month": "00",
+        "year": "00",
+        "hour": "00",
+        "minute": "21",
+        "second": "5"
+      }
+    },
+    {
+      "id": "3",
+      "description": "LUNCHING",
+      "observation": "LUNCHING",
+      "status": "play",
+      "inicio": {
+        "day": "00",
+        "month": "00",
+        "year": "00",
+        "hour": "00",
+        "minute": "21",
+        "second": "5"
+      },
+      "fim": {
+        "day": "00",
+        "month": "00",
+        "year": "00",
+        "hour": "00",
+        "minute": "21",
+        "second": "5"
+      },
+      "tempo_atual_inicio": {
+        "day": "00",
+        "month": "00",
+        "year": "00",
+        "hour": "00",
+        "minute": "21",
+        "second": "5"
+      },
+      "tempo_atual_fim": {
+        "day": "00",
+        "month": "00",
+        "year": "00",
+        "hour": "00",
+        "minute": "21",
+        "second": "5"
+      },
+      "tempo_decorrido": {
+        "day": "00",
+        "month": "00",
+        "year": "00",
+        "hour": "00",
+        "minute": "21",
+        "second": "5"
+      }
+    },
+    {
+      "id": "4",
+      "description": "FITNES",
+      "observation": "FITNESS",
+      "status": "play",
+      "inicio": {
+        "day": "00",
+        "month": "00",
+        "year": "00",
+        "hour": "00",
+        "minute": "21",
+        "second": "5"
+      },
+      "fim": {
+        "day": "00",
+        "month": "00",
+        "year": "00",
+        "hour": "00",
+        "minute": "21",
+        "second": "5"
+      },
+      "tempo_atual_inicio": {
+        "day": "00",
+        "month": "00",
+        "year": "00",
+        "hour": "00",
+        "minute": "21",
+        "second": "5"
+      },
+      "tempo_atual_fim": {
+        "day": "00",
+        "month": "00",
+        "year": "00",
+        "hour": "00",
+        "minute": "21",
+        "second": "5"
+      },
+      "tempo_decorrido": {
+        "day": "00",
+        "month": "00",
+        "year": "00",
+        "hour": "00",
+        "minute": "21",
+        "second": "5"
+      }
+    },
+    {
+      "id": "5",
+      "description": "TRAVELYING",
+      "observation": "TRAVELYING",
+      "status": "play",
+      "inicio": {
+        "day": "00",
+        "month": "00",
+        "year": "00",
+        "hour": "00",
+        "minute": "21",
+        "second": "5"
+      },
+      "fim": {
+        "day": "00",
+        "month": "00",
+        "year": "00",
+        "hour": "00",
+        "minute": "21",
+        "second": "5"
+      },
+      "tempo_atual_inicio": {
+        "day": "00",
+        "month": "00",
+        "year": "00",
+        "hour": "00",
+        "minute": "21",
+        "second": "5"
+      },
+      "tempo_atual_fim": {
+        "day": "00",
+        "month": "00",
+        "year": "00",
+        "hour": "00",
+        "minute": "21",
+        "second": "5"
+      },
+      "tempo_decorrido": {
+        "day": "00",
+        "month": "00",
+        "year": "00",
+        "hour": "00",
+        "minute": "21",
+        "second": "5"
+      }
+    },
+    {
+      "id": "6",
+      "description": "STUDYING",
+      "observation": "STUDYING",
+      "status": "play",
+      "inicio": {
+        "day": "00",
+        "month": "00",
+        "year": "00",
+        "hour": "00",
+        "minute": "21",
+        "second": "5"
+      },
+      "fim": {
+        "day": "00",
+        "month": "00",
+        "year": "00",
+        "hour": "00",
+        "minute": "21",
+        "second": "5"
+      },
+      "tempo_atual_inicio": {
+        "day": "00",
+        "month": "00",
+        "year": "00",
+        "hour": "00",
+        "minute": "21",
+        "second": "5"
+      },
+      "tempo_atual_fim": {
+        "day": "00",
+        "month": "00",
+        "year": "00",
+        "hour": "00",
+        "minute": "21",
+        "second": "5"
+      },
+      "tempo_decorrido": {
+        "day": "00",
+        "month": "00",
+        "year": "00",
+        "hour": "00",
+        "minute": "21",
+        "second": "5"
+      }
+    }
+  ],
+  "focuswork": [
+    {
+      "id": "1",
+      "description": "Task Test",
+      "status": "PLAY",
+      "inicio": {
+        "day": "00",
+        "month": "00",
+        "year": "00",
+        "hour": "00",
+        "minute": "21",
+        "second": "5"
+      },
+      "fim": {
+        "day": "00",
+        "month": "00",
+        "year": "00",
+        "hour": "00",
+        "minute": "21",
+        "second": "5"
+      }
+    }
+  ]
+}
