@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Database</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: #1abc9c;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    main {
+        border: 1px solid black;
+        width: 80vw;
+        height: 80vh;
+    }
+
+    li,
+    button {
+        list-style: none;
+        padding: 10px 15px;
+    }
+
+    button {
+        border: none;
+        border-radius: 10px;
+        border: 1px solid #0b5446;
+        transition: all .4s ease-in-out;
+        background-color: #1abc9c;
+        color: #fff;
+    }
+
+    button:hover {
+        background-color: #1abc9c;
+        border: 1px solid #fff;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    ul {
+        display: flex;
+        gap: 5px;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<script>
+    var client = false;
+    var SUPABASE_INSTANCE = callInstanceSupabase();
+
+    function getTokenSupabase() {
+        return "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndiZ2N0c3RwdGF5cnhza3dhcWxkIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTcyODk1Mzk3OCwiZXhwIjoyMDQ0NTI5OTc4fQ.0Sr6SO5gPQxSUNGoLb_LfvU7Cxgth7AST7-kc8aomlQ";
+    }
+
+    function getUrlApiSupabase() {
+        return "https://wbgctstptayrxskwaqld.supabase.co";
+    }
+
+    function callInstanceSupabase() {
+        if (!client) {
+            let { createClient } = supabase;
+            let url = getUrlApiSupabase();
+            client = createClient(url, getTokenSupabase());
+        }
+        return client;
+    }
+
+    async function listarDados(tabela) {
+        let aDados = await getAllDadosFromTabela(tabela);
+        console.log("dados retornados!!!!");
+        console.log(aDados);
+        document.querySelector("#resultado").innerHTML = JSON.stringify(aDados);
+    }
+
+    async function getAllDadosFromTabela(tabela) {
+        let { data: aDadosRetorno, error } = await SUPABASE_INSTANCE
+            .from(tabela)
+            .select("*");
+
+        if (error) {
+            alert("Erro:" + error);
+        }
+
+        const dados = aDadosRetorno;
+
+        console.log(dados);
+
+        return dados;
+    }
+
+</script>
+
+<body>
+    <main>
+        <header>
+            <ul>
+                <li>
+                    <button onclick="listarDados('usuario')">Listar Usuarios</button>
+                </li>
+            </ul>
+        </header>
+        <hr>
+        <div id="resultado"></div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+Return-Path: <>
+Delivered-To: recuperasenha@sai.srv.br
+Received: from us146-cp.valueserver.com.br
+	by us146-cp.valueserver.com.br with LMTP
+	id cBo+AHi2LGQFSwAA67D0nw
+	(envelope-from <>)
+	for <recuperasenha@sai.srv.br>; Tue, 04 Apr 2023 20:44:56 -0300
+Return-path: <>
+Envelope-to: recuperasenha@sai.srv.br
+Delivery-date: Tue, 04 Apr 2023 20:44:56 -0300
+Received: from mailnull by us146-cp.valueserver.com.br with local (Exim 4.96)
+	id 1pjqKd-0006e2-2l
+	for recuperasenha@sai.srv.br;
+	Tue, 04 Apr 2023 20:44:55 -0300
+X-Failed-Recipients: hari@lardamenina.org.br
+Auto-Submitted: auto-replied
+From: Mail Delivery System <Mailer-Daemon@us146-cp.valueserver.com.br>
+To: recuperasenha@sai.srv.br
+References: <OQ3L6RBfnlhHL4izdK7STyTB67yYrZ7NYM61VxJQ0@sai.srv.br>
+Content-Type: multipart/report; report-type=delivery-status; boundary=1680651895-eximdsn-1098239670
+MIME-Version: 1.0
+Subject: Mail delivery failed: returning message to sender
+Message-Id: <E1pjqKd-0006e2-2l@us146-cp.valueserver.com.br>
+Date: Tue, 04 Apr 2023 20:44:55 -0300
+
+--1680651895-eximdsn-1098239670
+Content-type: text/plain; charset=us-ascii
+
+This message was created automatically by mail delivery software.
+
+A message that you sent could not be delivered to one or more of its
+recipients. This is a permanent error. The following address(es) failed:
+
+  hari@lardamenina.org.br
+    host mail.lardamenina.org.br [142.93.75.24]
+    SMTP error from remote mail server after RCPT TO:<hari@lardamenina.org.br>:
+    550 No Such User Here"
+
+--1680651895-eximdsn-1098239670
+Content-type: message/delivery-status
+
+Reporting-MTA: dns; us146-cp.valueserver.com.br
+
+Action: failed
+Final-Recipient: rfc822;hari@lardamenina.org.br
+Status: 5.0.0
+Remote-MTA: dns; mail.lardamenina.org.br
+Diagnostic-Code: smtp; 550 No Such User Here"
+
+--1680651895-eximdsn-1098239670
+Content-type: message/rfc822
+
+Return-path: <recuperasenha@sai.srv.br>
+Received: from [67.23.238.123] (port=57282 helo=sai.srv.br)
+	by us146-cp.valueserver.com.br with esmtpsa  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	(Exim 4.96)
+	(envelope-from <recuperasenha@sai.srv.br>)
+	id 1pjqJz-0006Iv-0y
+	for hari@lardamenina.org.br;
+	Tue, 04 Apr 2023 20:44:13 -0300
+Date: Tue, 4 Apr 2023 20:44:13 -0300
+To: hari@lardamenina.org.br
+From: SAI <recuperasenha@sai.srv.br>
+Subject: Esqueci minha senha!
+Message-ID: <OQ3L6RBfnlhHL4izdK7STyTB67yYrZ7NYM61VxJQ0@sai.srv.br>
+X-Mailer: PHPMailer 6.0.7 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/html; charset=iso-8859-1
+Content-Transfer-Encoding: 8bit
+X-YourOrg-MailScanner-Information: Please contact the ISP for more information
+X-YourOrg-MailScanner-ID: 1pjqJz-0006Iv-0y
+X-YourOrg-MailScanner: Found to be clean
+X-YourOrg-MailScanner-SpamCheck: 
+X-YourOrg-MailScanner-From: recuperasenha@sai.srv.br
+X-Spam-Status: No
+
+Hari Passing, este e-mail é enviado automaticamente pelo sistema. Caso você não tenha solicitado a senha, fique tranquilo, somente você recebeu este e-mail. <br><br>
+
+		<strong>Sua senha para acessar o sistema é temporária!<br>
+		Assim que efetuar o login, faça a alteração da mesma: </strong><br/><br/>
+		<strong>Senha: rulhu</strong><br/><br />
+		Não revele sua senha para ninguém pois ela é secreta.
+		<hr />
+
+
+--1680651895-eximdsn-1098239670--

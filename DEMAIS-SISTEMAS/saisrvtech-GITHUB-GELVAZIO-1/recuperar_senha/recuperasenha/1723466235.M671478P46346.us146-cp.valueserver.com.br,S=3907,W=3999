@@ -1,0 +1,92 @@
+Return-Path: <>
+Delivered-To: recuperasenha@sai.srv.br
+Received: from us146-cp.valueserver.com.br
+	by us146-cp.valueserver.com.br with LMTP
+	id 4EhfJ/sBumYKtQAA67D0nw
+	(envelope-from <>)
+	for <recuperasenha@sai.srv.br>; Mon, 12 Aug 2024 09:37:15 -0300
+Return-path: <>
+Envelope-to: recuperasenha@sai.srv.br
+Delivery-date: Mon, 12 Aug 2024 09:37:15 -0300
+Received: from mailnull by us146-cp.valueserver.com.br with local (Exim 4.96.2)
+	id 1sdUIV-000CIj-1k
+	for recuperasenha@sai.srv.br;
+	Mon, 12 Aug 2024 09:37:15 -0300
+X-Failed-Recipients: debora@lardamenina.org.br
+Auto-Submitted: auto-replied
+From: Mail Delivery System <Mailer-Daemon@us146-cp.valueserver.com.br>
+To: recuperasenha@sai.srv.br
+References: <IOl9kpoyY7xypxkvLvex7VRf9FAw2ZvW0tERoHuuw4Q@sai.srv.br>
+Content-Type: multipart/report; report-type=delivery-status; boundary=1723466235-eximdsn-490031913
+MIME-Version: 1.0
+Subject: Mail delivery failed: returning message to sender
+Message-Id: <E1sdUIV-000CIj-1k@us146-cp.valueserver.com.br>
+Date: Mon, 12 Aug 2024 09:37:15 -0300
+
+--1723466235-eximdsn-490031913
+Content-type: text/plain; charset=us-ascii
+
+This message was created automatically by mail delivery software.
+
+A message that you sent could not be delivered to one or more of its
+recipients. This is a permanent error. The following address(es) failed:
+
+  debora@lardamenina.org.br
+    host SMTP.GOOGLE.COM [108.177.11.26]
+    SMTP error from remote mail server after RCPT TO:<debora@lardamenina.org.br>:
+    550-5.1.1 The email account that you tried to reach does not exist. Please try
+    550-5.1.1 double-checking the recipient's email address for typos or
+    550-5.1.1 unnecessary spaces. For more information, go to
+    550 5.1.1  https://support.google.com/mail/?p=NoSuchUser 71dfb90a1353d-4f91f50aa9bsi725671e0c.192 - gsmtp
+
+--1723466235-eximdsn-490031913
+Content-type: message/delivery-status
+
+Reporting-MTA: dns; us146-cp.valueserver.com.br
+
+Action: failed
+Final-Recipient: rfc822;debora@lardamenina.org.br
+Status: 5.0.0
+Remote-MTA: dns; SMTP.GOOGLE.COM
+Diagnostic-Code: smtp; 550-5.1.1 The email account that you tried to reach does not exist. Please try
+ 550-5.1.1 double-checking the recipient's email address for typos or
+ 550-5.1.1 unnecessary spaces. For more information, go to
+ 550 5.1.1  https://support.google.com/mail/?p=NoSuchUser 71dfb90a1353d-4f91f50aa9bsi725671e0c.192 - gsmtp
+
+--1723466235-eximdsn-490031913
+Content-type: message/rfc822
+
+Return-path: <recuperasenha@sai.srv.br>
+Received: from [67.23.238.123] (port=51168 helo=sai.srv.br)
+	by us146-cp.valueserver.com.br with esmtpsa  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	(Exim 4.96.2)
+	(envelope-from <recuperasenha@sai.srv.br>)
+	id 1sdUIU-000CHU-38
+	for debora@lardamenina.org.br;
+	Mon, 12 Aug 2024 09:37:14 -0300
+Date: Mon, 12 Aug 2024 09:37:14 -0300
+To: Debora Cristiane Araujo <debora@lardamenina.org.br>
+From: SAI <recuperasenha@sai.srv.br>
+Subject: Esqueci minha senha!
+Message-ID: <IOl9kpoyY7xypxkvLvex7VRf9FAw2ZvW0tERoHuuw4Q@sai.srv.br>
+X-Mailer: PHPMailer 6.0.7 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/html; charset=iso-8859-1
+Content-Transfer-Encoding: 8bit
+X-YourOrg-MailScanner-Information: Please contact the ISP for more information
+X-YourOrg-MailScanner-ID: 1sdUIU-000CHU-38
+X-YourOrg-MailScanner: Found to be clean
+X-YourOrg-MailScanner-SpamCheck: 
+X-YourOrg-MailScanner-From: recuperasenha@sai.srv.br
+X-Spam-Status: No
+
+Debora Cristiane Araujo, este e-mail é enviado automaticamente pelo sistema. Caso você não tenha solicitado a senha, fique tranquilo, somente você recebeu este e-mail. <br><br>
+
+		<strong>Sua senha para acessar o sistema é temporária!<br>
+		Assim que efetuar o login, faça a alteração da mesma: </strong><br/><br/>
+		<strong>Senha: fofoya</strong><br/><br />
+		Não revele sua senha para ninguém pois ela é secreta.
+		<hr />
+
+
+--1723466235-eximdsn-490031913--

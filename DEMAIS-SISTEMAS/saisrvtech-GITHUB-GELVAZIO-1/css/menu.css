@@ -1,0 +1,57 @@
+.titulo-pagina {
+  /* background-color: #088a10; */
+  background-color: var(--f7-theme-color);
+  color: #fff;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    /* --f7-theme-color: #04764e;
+    --f7-theme-color-rgb: 18, 34, 97;
+    --f7-theme-color-shade: #00613f;
+    --f7-theme-color-tint: #07ac72;
+    --f7-theme-color-light: #d9ede6; */
+}
+
+.titulo-pagina div {
+  /* background-color: rgb(7, 40, 40); */
+  color: aliceblue;
+  /* width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center; */
+
+  /* width:100vw; */
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
+}
+
+.titulo-pagina .title{
+  color:blue;
+  font-size: 35px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.page-content {
+  background-color: aqua;
+}
+
+.content-instituicao {
+  height: 100%;
+  width: 100vw;
+  display: flex;    
+  justify-content: center;
+  align-items: center;
+}
+
+#menu-inferior {
+  background-color: var(--f7-theme-color);
+  color: #fff;
+}
+
+#menu-inferior div a span {
+  color: #fff;
+}

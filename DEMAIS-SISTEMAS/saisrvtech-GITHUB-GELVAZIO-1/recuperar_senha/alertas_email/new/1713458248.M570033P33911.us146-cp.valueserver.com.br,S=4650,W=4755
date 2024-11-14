@@ -1,0 +1,105 @@
+Return-Path: <>
+Delivered-To: sai@sai.srv.br
+Received: from us146-cp.valueserver.com.br
+	by us146-cp.valueserver.com.br with LMTP
+	id OOnVIUhMIWZ3hAAA67D0nw
+	(envelope-from <>)
+	for <sai@sai.srv.br>; Thu, 18 Apr 2024 13:37:28 -0300
+Return-path: <>
+Envelope-to: sai@sai.srv.br
+Delivery-date: Thu, 18 Apr 2024 13:37:28 -0300
+Received: from mailnull by us146-cp.valueserver.com.br with local (Exim 4.96.2)
+	id 1rxUlM-000A63-1P
+	for sai@sai.srv.br;
+	Thu, 18 Apr 2024 13:37:28 -0300
+X-Failed-Recipients: analucia@lardamenina.org.br
+Auto-Submitted: auto-replied
+From: Mail Delivery System <Mailer-Daemon@us146-cp.valueserver.com.br>
+To: sai@sai.srv.br
+References: <qYLGkrkyx0NPkL1CgM62cLbysW9qSuu0evbN0QIdrLU@sai.srv.br>
+Content-Type: multipart/report; report-type=delivery-status; boundary=1713458248-eximdsn-1643800396
+MIME-Version: 1.0
+Subject: Mail delivery failed: returning message to sender
+Message-Id: <E1rxUlM-000A63-1P@us146-cp.valueserver.com.br>
+Date: Thu, 18 Apr 2024 13:37:28 -0300
+
+--1713458248-eximdsn-1643800396
+Content-type: text/plain; charset=us-ascii
+
+This message was created automatically by mail delivery software.
+
+A message that you sent could not be delivered to one or more of its
+recipients. This is a permanent error. The following address(es) failed:
+
+  analucia@lardamenina.org.br
+    host SMTP.GOOGLE.COM [172.217.192.27]
+    SMTP error from remote mail server after RCPT TO:<analucia@lardamenina.org.br>:
+    550-5.1.1 The email account that you tried to reach does not exist. Please try
+    550-5.1.1 double-checking the recipient's email address for typos or
+    550-5.1.1 unnecessary spaces. For more information, go to
+    550 5.1.1  https://support.google.com/mail/?p=NoSuchUser u8-20020a170903124800b001e7d54c8bc2si1819359plh.254 - gsmtp
+
+--1713458248-eximdsn-1643800396
+Content-type: message/delivery-status
+
+Reporting-MTA: dns; us146-cp.valueserver.com.br
+
+Action: failed
+Final-Recipient: rfc822;analucia@lardamenina.org.br
+Status: 5.0.0
+Remote-MTA: dns; SMTP.GOOGLE.COM
+Diagnostic-Code: smtp; 550-5.1.1 The email account that you tried to reach does not exist. Please try
+ 550-5.1.1 double-checking the recipient's email address for typos or
+ 550-5.1.1 unnecessary spaces. For more information, go to
+ 550 5.1.1  https://support.google.com/mail/?p=NoSuchUser u8-20020a170903124800b001e7d54c8bc2si1819359plh.254 - gsmtp
+
+--1713458248-eximdsn-1643800396
+Content-type: message/rfc822
+
+Return-path: <sai@sai.srv.br>
+Received: from mailnull by us146-cp.valueserver.com.br with spam-scanner (Exim 4.96.2)
+	(envelope-from <sai@sai.srv.br>)
+	id 1rxUlF-0009sM-08;
+	Thu, 18 Apr 2024 13:37:21 -0300
+X-ImunifyEmail-Filter-Info: SEFTX1BIUE1BSUxFUl9TSUcgVE9fRE5fQUxMIFJDVkRfVklBX1NNVFB
+	fQVVUSCBUT19FUV9GUk9NIFJDVkRfVExTX0FMTCBIQVNfUkVQTFlUTy
+	BWRVJJTE9DS19DQiBSQ1ZEX0NPVU5UX09ORSBCQVlFU19IQU0gQVJDX
+	05BIE1JTUVfVU5LTk9XTiBNSURfUkhTX01BVENIX0ZST00gRlJPTV9I
+	QVNfRE4gQVNOIFJFUExZVE9fQUREUl9FUV9GUk9NIE1JTUVfVFJBQ0U
+	gRlJPTV9FUV9FTlZGUk9NIFJDUFRfQ09VTlRfT05FIE1JTUVfSFRNTF
+	9PTkxZ
+X-ImunifyEmail-Filter-Action: no action
+X-ImunifyEmail-Filter-Score: -4.34
+X-ImunifyEmail-Filter-Version: 3.5.11/202404120932
+Received: from [67.23.238.123] (port=42764 helo=sai.srv.br)
+	by us146-cp.valueserver.com.br with esmtpsa  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	(Exim 4.96.2)
+	(envelope-from <sai@sai.srv.br>)
+	id 1rxUl9-0009j9-2m;
+	Thu, 18 Apr 2024 13:37:15 -0300
+Date: Thu, 18 Apr 2024 13:37:15 -0300
+To: =?utf-8?Q?Patrick_M=C3=BCnzfeld?= <sai@sai.srv.br>
+From: SAI <sai@sai.srv.br>
+Reply-To: =?utf-8?Q?Patrick_M=C3=BCnzfeld?= <sai@sai.srv.br>
+Subject: =?utf-8?Q?Novo_comunicado_recebido:_Sa=C3=ADda_para_v=C3=B4lei_-_Amanda_e?=
+ =?utf-8?Q?_Aleandra_Michels?=
+Message-ID: <qYLGkrkyx0NPkL1CgM62cLbysW9qSuu0evbN0QIdrLU@sai.srv.br>
+X-Mailer: PHPMailer 6.0.7 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 8bit
+X-YourOrg-MailScanner: Not scanned: please contact your Internet E-Mail Service Provider for details, Found to be clean
+X-YourOrg-MailScanner-SpamCheck: not spam (whitelisted),
+	SpamAssassin (not cached, score=3.678, required 4, ALL_TRUSTED -1.00,
+	BAYES_80 4.20, HTML_MESSAGE 0.00, HTML_MIME_NO_HTML_TAG 0.38,
+	MIME_HTML_ONLY 0.10), 
+X-Spam-Status: No, No
+X-YourOrg-MailScanner-Information: Please contact the ISP for more information
+X-YourOrg-MailScanner-ID: 1rxUlF-0009sM-08
+X-YourOrg-MailScanner-From: sai@sai.srv.br
+
+Você recebeu um novo comunicado emitido pelo sistema SAI. <br><br>Para visualizá-lo, acesse o sistema com seu usuário e senha. <br><br>Comunicado enviado por Patrick Münzfeld
+
+
+
+--1713458248-eximdsn-1643800396--

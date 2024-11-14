@@ -1,0 +1,86 @@
+Return-Path: <>
+Delivered-To: recuperasenha@sai.srv.br
+Received: from us146-cp.valueserver.com.br
+	by us146-cp.valueserver.com.br with LMTP
+	id 6H0+FSzV4WWGNQAA67D0nw
+	(envelope-from <>)
+	for <recuperasenha@sai.srv.br>; Fri, 01 Mar 2024 10:16:28 -0300
+Return-path: <>
+Envelope-to: recuperasenha@sai.srv.br
+Delivery-date: Fri, 01 Mar 2024 10:16:28 -0300
+Received: from mailnull by us146-cp.valueserver.com.br with local (Exim 4.96.2)
+	id 1rg2kW-0004NM-0k
+	for recuperasenha@sai.srv.br;
+	Fri, 01 Mar 2024 10:16:28 -0300
+X-Failed-Recipients: debora@lardamenina.org.br
+Auto-Submitted: auto-replied
+From: Mail Delivery System <Mailer-Daemon@us146-cp.valueserver.com.br>
+To: recuperasenha@sai.srv.br
+References: <bhzhKln51KIriYm5B3o8rE1k7UKpbAejSDtVjhATTk@sai.srv.br>
+Content-Type: multipart/report; report-type=delivery-status; boundary=1709298988-eximdsn-1020741473
+MIME-Version: 1.0
+Subject: Mail delivery failed: returning message to sender
+Message-Id: <E1rg2kW-0004NM-0k@us146-cp.valueserver.com.br>
+Date: Fri, 01 Mar 2024 10:16:28 -0300
+
+--1709298988-eximdsn-1020741473
+Content-type: text/plain; charset=us-ascii
+
+This message was created automatically by mail delivery software.
+
+A message that you sent could not be delivered to one or more of its
+recipients. This is a permanent error. The following address(es) failed:
+
+  debora@lardamenina.org.br
+    host mail.lardamenina.org.br [142.93.75.24]
+    SMTP error from remote mail server after RCPT TO:<debora@lardamenina.org.br>:
+    550 No Such User Here"
+
+--1709298988-eximdsn-1020741473
+Content-type: message/delivery-status
+
+Reporting-MTA: dns; us146-cp.valueserver.com.br
+
+Action: failed
+Final-Recipient: rfc822;debora@lardamenina.org.br
+Status: 5.0.0
+Remote-MTA: dns; mail.lardamenina.org.br
+Diagnostic-Code: smtp; 550 No Such User Here"
+
+--1709298988-eximdsn-1020741473
+Content-type: message/rfc822
+
+Return-path: <recuperasenha@sai.srv.br>
+Received: from [67.23.238.123] (port=60948 helo=sai.srv.br)
+	by us146-cp.valueserver.com.br with esmtpsa  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	(Exim 4.96.2)
+	(envelope-from <recuperasenha@sai.srv.br>)
+	id 1rg2jp-0003HH-1d
+	for debora@lardamenina.org.br;
+	Fri, 01 Mar 2024 10:15:45 -0300
+Date: Fri, 1 Mar 2024 10:15:44 -0300
+To: debora@lardamenina.org.br
+From: SAI <recuperasenha@sai.srv.br>
+Subject: Esqueci minha senha!
+Message-ID: <bhzhKln51KIriYm5B3o8rE1k7UKpbAejSDtVjhATTk@sai.srv.br>
+X-Mailer: PHPMailer 6.0.7 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/html; charset=iso-8859-1
+Content-Transfer-Encoding: 8bit
+X-YourOrg-MailScanner-Information: Please contact the ISP for more information
+X-YourOrg-MailScanner-ID: 1rg2jp-0003HH-1d
+X-YourOrg-MailScanner: Found to be clean
+X-YourOrg-MailScanner-SpamCheck: 
+X-YourOrg-MailScanner-From: recuperasenha@sai.srv.br
+X-Spam-Status: No
+
+Debora Cristiane Araujo, este e-mail é enviado automaticamente pelo sistema. Caso você não tenha solicitado a senha, fique tranquilo, somente você recebeu este e-mail. <br><br>
+
+		<strong>Sua senha para acessar o sistema é temporária!<br>
+		Assim que efetuar o login, faça a alteração da mesma: </strong><br/><br/>
+		<strong>Senha: yunho</strong><br/><br />
+		Não revele sua senha para ninguém pois ela é secreta.
+		<hr />
+
+
+--1709298988-eximdsn-1020741473--

@@ -1,0 +1,92 @@
+Return-Path: <>
+Delivered-To: recuperasenha@sai.srv.br
+Received: from us146-cp.valueserver.com.br
+	by us146-cp.valueserver.com.br with LMTP
+	id oKDMFVpENWbOjAAA67D0nw
+	(envelope-from <>)
+	for <recuperasenha@sai.srv.br>; Fri, 03 May 2024 17:08:58 -0300
+Return-path: <>
+Envelope-to: recuperasenha@sai.srv.br
+Delivery-date: Fri, 03 May 2024 17:08:58 -0300
+Received: from mailnull by us146-cp.valueserver.com.br with local (Exim 4.96.2)
+	id 1s2zDG-0001tE-0j
+	for recuperasenha@sai.srv.br;
+	Fri, 03 May 2024 17:08:58 -0300
+X-Failed-Recipients: danielle@amc-sc.org
+Auto-Submitted: auto-replied
+From: Mail Delivery System <Mailer-Daemon@us146-cp.valueserver.com.br>
+To: recuperasenha@sai.srv.br
+References: <iJflY0m2sfhkTudW5khDqCZkyTAuMRCciViwV5bY6c@sai.srv.br>
+Content-Type: multipart/report; report-type=delivery-status; boundary=1714766938-eximdsn-1429536866
+MIME-Version: 1.0
+Subject: Mail delivery failed: returning message to sender
+Message-Id: <E1s2zDG-0001tE-0j@us146-cp.valueserver.com.br>
+Date: Fri, 03 May 2024 17:08:58 -0300
+
+--1714766938-eximdsn-1429536866
+Content-type: text/plain; charset=us-ascii
+
+This message was created automatically by mail delivery software.
+
+A message that you sent could not be delivered to one or more of its
+recipients. This is a permanent error. The following address(es) failed:
+
+  danielle@amc-sc.org
+    host aspmx.l.google.com [172.217.192.26]
+    SMTP error from remote mail server after RCPT TO:<danielle@amc-sc.org>:
+    550-5.1.1 The email account that you tried to reach does not exist. Please try
+    550-5.1.1 double-checking the recipient's email address for typos or
+    550-5.1.1 unnecessary spaces. For more information, go to
+    550 5.1.1  https://support.google.com/mail/?p=NoSuchUser v1-20020a634641000000b005d8b8c6f94csi3672785pgk.565 - gsmtp
+
+--1714766938-eximdsn-1429536866
+Content-type: message/delivery-status
+
+Reporting-MTA: dns; us146-cp.valueserver.com.br
+
+Action: failed
+Final-Recipient: rfc822;danielle@amc-sc.org
+Status: 5.0.0
+Remote-MTA: dns; aspmx.l.google.com
+Diagnostic-Code: smtp; 550-5.1.1 The email account that you tried to reach does not exist. Please try
+ 550-5.1.1 double-checking the recipient's email address for typos or
+ 550-5.1.1 unnecessary spaces. For more information, go to
+ 550 5.1.1  https://support.google.com/mail/?p=NoSuchUser v1-20020a634641000000b005d8b8c6f94csi3672785pgk.565 - gsmtp
+
+--1714766938-eximdsn-1429536866
+Content-type: message/rfc822
+
+Return-path: <recuperasenha@sai.srv.br>
+Received: from [67.23.238.123] (port=49088 helo=sai.srv.br)
+	by us146-cp.valueserver.com.br with esmtpsa  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	(Exim 4.96.2)
+	(envelope-from <recuperasenha@sai.srv.br>)
+	id 1s2zDE-0001pT-0V
+	for danielle@amc-sc.org;
+	Fri, 03 May 2024 17:08:54 -0300
+Date: Fri, 3 May 2024 17:08:53 -0300
+To: Danielle Cristina Rodrigues <danielle@amc-sc.org>
+From: SAI <recuperasenha@sai.srv.br>
+Subject: Esqueci minha senha!
+Message-ID: <iJflY0m2sfhkTudW5khDqCZkyTAuMRCciViwV5bY6c@sai.srv.br>
+X-Mailer: PHPMailer 6.0.7 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/html; charset=iso-8859-1
+Content-Transfer-Encoding: 8bit
+X-YourOrg-MailScanner-Information: Please contact the ISP for more information
+X-YourOrg-MailScanner-ID: 1s2zDE-0001pT-0V
+X-YourOrg-MailScanner: Found to be clean
+X-YourOrg-MailScanner-SpamCheck: 
+X-YourOrg-MailScanner-From: recuperasenha@sai.srv.br
+X-Spam-Status: No
+
+Danielle Cristina Rodrigues, este e-mail é enviado automaticamente pelo sistema. Caso você não tenha solicitado a senha, fique tranquilo, somente você recebeu este e-mail. <br><br>
+
+		<strong>Sua senha para acessar o sistema é temporária!<br>
+		Assim que efetuar o login, faça a alteração da mesma: </strong><br/><br/>
+		<strong>Senha: gidiguxi</strong><br/><br />
+		Não revele sua senha para ninguém pois ela é secreta.
+		<hr />
+
+
+--1714766938-eximdsn-1429536866--

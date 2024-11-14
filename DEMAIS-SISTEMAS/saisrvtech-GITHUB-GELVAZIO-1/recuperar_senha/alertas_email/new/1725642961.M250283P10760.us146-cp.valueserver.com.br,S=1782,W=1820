@@ -1,0 +1,38 @@
+Return-Path: <sai@sai.srv.br>
+Delivered-To: sai@sai.srv.br
+Received: from us146-cp.valueserver.com.br
+	by us146-cp.valueserver.com.br with LMTP
+	id KKwnDtE422YIKgAA67D0nw
+	(envelope-from <sai@sai.srv.br>)
+	for <sai@sai.srv.br>; Fri, 06 Sep 2024 14:16:01 -0300
+Return-path: <sai@sai.srv.br>
+Envelope-to: sai@sai.srv.br
+Delivery-date: Fri, 06 Sep 2024 14:16:01 -0300
+Received: from [67.23.238.123] (port=60140 helo=sai.srv.br)
+	by us146-cp.valueserver.com.br with esmtpsa  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	(Exim 4.96.2)
+	(envelope-from <sai@sai.srv.br>)
+	id 1smcZ0-0004Vb-0s;
+	Fri, 06 Sep 2024 14:15:59 -0300
+Date: Fri, 6 Sep 2024 14:15:57 -0300
+To: Gilmara Cristina Schmitz Lopes dos Santos <sai@sai.srv.br>
+From: SAI <sai@sai.srv.br>
+Reply-To: Gilmara Cristina Schmitz Lopes dos Santos <sai@sai.srv.br>
+Subject: Novo comunicado recebido:
+Message-ID: <B6ltjwFx7Kei4mdn0RUN9ML80Oy6udGGeagASH0Pc@sai.srv.br>
+X-Mailer: PHPMailer 6.0.7 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 8bit
+X-YourOrg-MailScanner-Information: Please contact the ISP for more information
+X-YourOrg-MailScanner-ID: 1smcZ0-0004Vb-0s
+X-YourOrg-MailScanner: Not scanned: please contact your Internet E-Mail Service Provider for details
+X-YourOrg-MailScanner-SpamCheck: not spam (whitelisted),
+	SpamAssassin (not cached, score=0.978, required 4, ALL_TRUSTED -1.00,
+	BAYES_60 1.50, HTML_MESSAGE 0.00, HTML_MIME_NO_HTML_TAG 0.38,
+	MIME_HTML_ONLY 0.10)
+X-YourOrg-MailScanner-From: sai@sai.srv.br
+X-Spam-Status: No
+
+Você recebeu um novo comunicado emitido pelo sistema SAI. <br><br>Para visualizá-lo, acesse o sistema com seu usuário e senha. <br><br>Comunicado enviado por Gilmara Cristina Schmitz Lopes dos Santos
+

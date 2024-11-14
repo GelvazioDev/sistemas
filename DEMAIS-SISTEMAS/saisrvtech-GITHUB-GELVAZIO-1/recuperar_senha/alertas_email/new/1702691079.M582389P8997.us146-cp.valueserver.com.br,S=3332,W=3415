@@ -1,0 +1,83 @@
+Return-Path: <>
+Delivered-To: sai@sai.srv.br
+Received: from us146-cp.valueserver.com.br
+	by us146-cp.valueserver.com.br with LMTP
+	id yIPiIQcBfWUlIwAA67D0nw
+	(envelope-from <>)
+	for <sai@sai.srv.br>; Fri, 15 Dec 2023 22:44:39 -0300
+Return-path: <>
+Envelope-to: sai@sai.srv.br
+Delivery-date: Fri, 15 Dec 2023 22:44:39 -0300
+Received: from mailnull by us146-cp.valueserver.com.br with local (Exim 4.96.2)
+	id 1rEJjL-0003jq-1O
+	for sai@sai.srv.br;
+	Fri, 15 Dec 2023 22:44:39 -0300
+X-Failed-Recipients: simonemuller@lardamenina.org.br
+Auto-Submitted: auto-replied
+From: Mail Delivery System <Mailer-Daemon@us146-cp.valueserver.com.br>
+To: sai@sai.srv.br
+References: <7E4awSUZmt8fYN7AhsHg2riabi1G0MunwXPFqtIZw@sai.srv.br>
+Content-Type: multipart/report; report-type=delivery-status; boundary=1702691079-eximdsn-695679757
+MIME-Version: 1.0
+Subject: Mail delivery failed: returning message to sender
+Message-Id: <E1rEJjL-0003jq-1O@us146-cp.valueserver.com.br>
+Date: Fri, 15 Dec 2023 22:44:39 -0300
+
+--1702691079-eximdsn-695679757
+Content-type: text/plain; charset=us-ascii
+
+This message was created automatically by mail delivery software.
+
+A message that you sent could not be delivered to one or more of its
+recipients. This is a permanent error. The following address(es) failed:
+
+  simonemuller@lardamenina.org.br
+    host mail.lardamenina.org.br [142.93.75.24]
+    SMTP error from remote mail server after RCPT TO:<simonemuller@lardamenina.org.br>:
+    550 No Such User Here"
+
+--1702691079-eximdsn-695679757
+Content-type: message/delivery-status
+
+Reporting-MTA: dns; us146-cp.valueserver.com.br
+
+Action: failed
+Final-Recipient: rfc822;simonemuller@lardamenina.org.br
+Status: 5.0.0
+Remote-MTA: dns; mail.lardamenina.org.br
+Diagnostic-Code: smtp; 550 No Such User Here"
+
+--1702691079-eximdsn-695679757
+Content-type: message/rfc822
+
+Return-path: <sai@sai.srv.br>
+Received: from [67.23.238.123] (port=43854 helo=sai.srv.br)
+	by us146-cp.valueserver.com.br with esmtpsa  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	(Exim 4.96.2)
+	(envelope-from <sai@sai.srv.br>)
+	id 1rEIyj-0009bS-2u;
+	Fri, 15 Dec 2023 21:56:26 -0300
+Date: Fri, 15 Dec 2023 21:56:25 -0300
+To: =?utf-8?Q?Patrick_M=C3=BCnzfeld?= <sai@sai.srv.br>
+From: SAI <sai@sai.srv.br>
+Reply-To: =?utf-8?Q?Patrick_M=C3=BCnzfeld?= <sai@sai.srv.br>
+Subject: =?utf-8?Q?Novo_comunicado_recebido:_Sa=C3=ADdas_externas.?=
+Message-ID: <7E4awSUZmt8fYN7AhsHg2riabi1G0MunwXPFqtIZw@sai.srv.br>
+X-Mailer: PHPMailer 6.0.7 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 8bit
+X-YourOrg-MailScanner-Information: Please contact the ISP for more information
+X-YourOrg-MailScanner-ID: 1rEIyj-0009bS-2u
+X-YourOrg-MailScanner: Not scanned: please contact your Internet E-Mail Service Provider for details
+X-YourOrg-MailScanner-SpamCheck: not spam (whitelisted),
+	SpamAssassin (not cached, score=0.968, required 4, ALL_TRUSTED -1.00,
+	BAYES_60 1.50, HTML_MESSAGE 0.00, HTML_MIME_NO_HTML_TAG 0.38,
+	MIME_HTML_ONLY 0.10, T_SCC_BODY_TEXT_LINE -0.01)
+X-YourOrg-MailScanner-From: sai@sai.srv.br
+X-Spam-Status: No
+
+Você recebeu um novo comunicado emitido pelo sistema SAI. <br><br>Para visualizá-lo, acesse o sistema com seu usuário e senha. <br><br>Comunicado enviado por Patrick Münzfeld
+
+
+--1702691079-eximdsn-695679757--

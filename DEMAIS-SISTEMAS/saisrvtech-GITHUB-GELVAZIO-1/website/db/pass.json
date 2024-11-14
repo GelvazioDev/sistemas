@@ -1,0 +1,10 @@
+[
+    {
+        "sistema": "SAI - Sistema de Atendimento Institucional",
+        "database": "postgres",
+        "host": "",
+        "port": "5432",
+        "username": "postgres.wbgctstptayrxskwaqld",
+        "pass": "6ZhQpTRcfeTPuJi6"
+    }
+]
