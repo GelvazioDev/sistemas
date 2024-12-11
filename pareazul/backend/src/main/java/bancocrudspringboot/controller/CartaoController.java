@@ -2,8 +2,6 @@ package bancocrudspringboot.controller;
 
 import bancocrudspringboot.exception.ResourceNotFoundException;
 import bancocrudspringboot.model.Cartao;
-// import bancocrudspringboot.model.ConsultaPadrao;
-// import bancocrudspringboot.model.OperadoresConsulta;
 import bancocrudspringboot.repository.CartaoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
